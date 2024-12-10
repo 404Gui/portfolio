@@ -1,0 +1,53 @@
+.div{
+    height: 100vh;
+    margin-top: 3rem;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.title h1 {
+    color: var(--verde-claro);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.iconLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.icon {
+    margin: 0 10px;
+    font-size: 24px; /* Ajuste o tamanho conforme necessário */
+    color: #66FCF1; /* Use uma cor que combine com o seu tema */
+}
+
+.decorativeLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: var(--verde-claro);
+    border-radius: 50%;
+    /* margin: 0 5px; */
+}
+
+.line {
+    width: 100px; /* Ajuste o comprimento da linha conforme necessário */
+    height: 2px;
+    background-color: var(--verde-claro);
+}
+

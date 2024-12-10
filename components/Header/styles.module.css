@@ -1,0 +1,102 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 1rem; */
+    /* margin: 1rem; */
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 31, 28, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    transition: background 0.3s ease;
+}
+
+
+.logo {
+    display: flex;  
+      
+}
+
+.teste {
+    display: flex;
+    gap: 1rem;
+    font-size: 14px;
+
+}
+
+.teste span:hover {
+    color: #12F7D6;
+    cursor: pointer;
+}
+
+.code {
+    color: #12F7D6;
+    
+}
+
+.navmenu {
+    display: flex;
+    gap: 1rem;
+}
+
+.navlinks {
+    list-style: none;
+    font-size: 16px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400; /* Regular */
+}
+
+.navlinks:hover, .socialLinks:hover {
+    color: #12F7D6;
+    cursor: pointer;
+}
+
+.socialMenu {
+    display: flex;
+    gap: 20px;
+}
+
+.socialMenu li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+    gap: 5px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400; /* Regular */
+}
+
+.socialLinks a {
+    display: flex;
+    align-items: center;
+    gap: 4px;    
+}
+.socialIcons {
+    color: #12F7D6;
+}
+
+.divider {
+    border: none; 
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 0 2rem; 
+    height: 1px;
+  }
+
+
+
+  @media (min-width: 300px) and (max-width: 900px) {
+    /* Estilos para tablets em modo retrato */
+    .socialLinks span{
+      display: none;
+    }
+  
+    .aside {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  

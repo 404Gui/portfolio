@@ -1,0 +1,9 @@
+.title {
+    margin-top: 7rem;
+    /* margin-bottom: 54px; */
+    color: var(--verde-claro);
+    font-size: 4rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+
+}

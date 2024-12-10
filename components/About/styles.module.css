@@ -1,0 +1,66 @@
+
+
+.about {
+    padding: 2rem; 
+    margin: 0 auto; /* centraliza o container horizontalmente */
+    max-width: 1200px; /* limita a largura */
+    /* height: 100vh; */
+    
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+  }
+  
+  .element {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .logos {
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .title {
+    margin: 2rem 0;
+    margin-left: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+
+  }
+
+  .texto {
+    font-family: 'IBM Plex Mono', monospace;
+    margin-left: 1rem;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .code {
+    color: var(--verde-claro);
+    font-size: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400; /* Regular */
+}
+
+.iconLine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.icon {
+  margin: 0 10px;
+  font-size: 24px; 
+  color: #66FCF1;
+}
+
+
+  

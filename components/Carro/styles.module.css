@@ -1,0 +1,76 @@
+.carouselContainer {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  margin-top: 4rem;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slideContent {
+  display: flex;
+  align-items: center; /* Centraliza a imagem e o texto verticalmente */
+  justify-content: center; /* Mantém a imagem à esquerda e o texto à direita */
+  color: white;
+  background: linear-gradient(160deg, #08524a, #000000);
+
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left; /* Garante que o texto fique alinhado à esquerda */
+  gap: 20px; /* Espaçamento entre a imagem e o conteúdo de texto */
+  margin: 0 5rem;
+}
+
+
+
+.slideContent section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.viewProjectButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.slickPrev, .slickNext {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slickPrev {
+  left: 10px;
+}
+
+.slickNext {
+  right: 10px;
+}
+
+.slickDots {
+  bottom: 10px;
+}
+
+.slickDots li button::before {
+  color: white;
+}
