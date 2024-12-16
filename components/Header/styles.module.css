@@ -1,9 +1,7 @@
 .header {
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
-    align-items: center;
-    /* padding: 1rem; */
-    /* margin: 1rem; */
+    align-items: center;    
     height: 70px;
     position: fixed;
     top: 0;
@@ -18,6 +16,9 @@
 
 .logo {
     display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5rem;
       
 }
 
@@ -88,7 +89,7 @@
 
 
 
-  @media (min-width: 300px) and (max-width: 900px) {
+  @media (max-width: 768px) {
     .socialLinks span{
       display: none;
     }
@@ -96,6 +97,15 @@
     .aside {
       display: flex;
       justify-content: center;
+    }
+
+    .code {
+        display: none;
+    }
+
+    .logo {
+        justify-content: center;
+        gap: 32px;
     }
   }
   

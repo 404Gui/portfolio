@@ -1,76 +1,92 @@
 .carouselContainer {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  margin-top: 4rem;
+  padding: 2rem 0;
 }
 
 .slide {
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  padding: 1rem;
 }
 
-.slideContent {
-  display: flex;
-  align-items: center; /* Centraliza a imagem e o texto verticalmente */
-  justify-content: center; /* Mantém a imagem à esquerda e o texto à direita */
-  color: white;
-  background: linear-gradient(160deg, #08524a, #000000);
-
-  padding: 20px;
+.card {
+  border: 2px solid #A56CFF;
   border-radius: 10px;
-  text-align: left; /* Garante que o texto fique alinhado à esquerda */
-  gap: 20px; /* Espaçamento entre a imagem e o conteúdo de texto */
-  margin: 0 5rem;
-}
-
-
-
-.slideContent section {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 1.5rem;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-}
-
-.viewProjectButton {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #fff;
-  color: #000;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.slickPrev, .slickNext {
+  align-items: center;
+  gap: 0.5rem;
+  height: 300px; 
+  position: relative;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  padding: 10px;
+}
+
+.card::before {
+  content: "";
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
+  top: 205px;  
+  width: 100%;
+  height: 30%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: relative;
   z-index: 1;
 }
 
+.descricao {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: end;
+  height: 100%;
+  margin-top: 185px;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 7px;
+  position: relative;
+  z-index: 1;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: #f0f0f0;
+  /* margin: 0.3rem 0 1rem; */
+  position: relative;
+  z-index: 1;
+}
+
+.slickNext,
 .slickPrev {
-  left: 10px;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
 }
 
 .slickNext {
-  right: 10px;
+  right: -10px;
 }
 
-.slickDots {
-  bottom: 10px;
+.slickPrev {
+  left: -10px;
 }
 
-.slickDots li button::before {
-  color: white;
+/* Espaçamento entre os slides */
+.slick-slide {
+  padding: 0 10px;
 }

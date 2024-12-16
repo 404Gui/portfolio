@@ -72,18 +72,4 @@ const Carousel = ({ projects }) => {
   );
 };
 
-// const roundButtonStyle = {
-//   borderRadius: "50%",
-//   width: "50px",
-//   height: "50px",
-//   display: "flex",
-//   alignItems: "center",
-//   justifyContent: "center",
-//   border: "none",
-//   backgroundColor: "#333",
-//   color: "#fff",
-//   cursor: "pointer",
-//   fontSize: "20px",
-// };
-
 export default Carousel;

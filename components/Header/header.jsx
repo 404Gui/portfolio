@@ -9,48 +9,50 @@ export default function Header() {
     <>
       <header className={styles.header}>
         <div className={styles.logo}>
-          <span className={styles.code}>&lt;C/&gt;</span>
-          <div className={styles.name}>GuilhermePappi</div>
+            <span className={styles.code}>&lt;C/&gt;GuilhermePappi</span>
+            {/* //<div className={styles.name}>GuilhermePappi</div> */}
+            <nav className={styles.navbar}>
+            <ul className={styles.navmenu}>
+              <li className={styles.navlinks}>
+                <Link href="/home">
+                  Home
+                </Link>              
+              </li>
+              <li className={styles.navlinks}>
+                  Sobre mim
+              </li>
+              <li className={styles.navlinks}>
+                  Projetos
+              </li>            
+            </ul>
+            </nav>
+
+          <nav className={styles.socialnav}>
+            <ul className={styles.socialMenu}>
+              <li className={styles.socialLinks}>
+                <Link href="https://www.linkedin.com/in/guilherme-pappi/" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon className={styles.socialIcons} icon={faLinkedin} width={15} height={15} />
+                  <span>Linkedin</span>
+                </Link>
+              </li>
+              <li className={styles.socialLinks}>
+                <Link href="https://github.com/404Gui" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon className={styles.socialIcons} icon={faGithub} width={15} height={15} />
+                  <span>Github</span>
+                </Link>
+              </li>
+              <li className={styles.socialLinks}>
+                <Link href="https://www.instagram.com/404guii" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon className={styles.socialIcons} icon={faInstagram} width={15} height={15} />
+                  <span>Instagram</span>
+                </Link>
+              </li>
+            </ul>
+          </nav>
+
         </div>
 
-        <nav className={styles.navbar}>
-          <ul className={styles.navmenu}>
-            <li className={styles.navlinks}>
-              <Link href="/home">
-                Home
-              </Link>              
-            </li>
-            <li className={styles.navlinks}>
-                Sobre mim
-            </li>
-            <li className={styles.navlinks}>
-                Projetos
-            </li>            
-          </ul>
-        </nav>
-
-        <nav className={styles.socialnav}>
-          <ul className={styles.socialMenu}>
-            <li className={styles.socialLinks}>
-              <Link href="https://www.linkedin.com/in/guilherme-pappi/" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon className={styles.socialIcons} icon={faLinkedin} width={15} height={15} />
-                <span>Linkedin</span>
-              </Link>
-            </li>
-            <li className={styles.socialLinks}>
-              <Link href="https://github.com/404Gui" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon className={styles.socialIcons} icon={faGithub} width={15} height={15} />
-                <span>Github</span>
-              </Link>
-            </li>
-            <li className={styles.socialLinks}>
-              <Link href="https://www.instagram.com/404guii" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon className={styles.socialIcons} icon={faInstagram} width={15} height={15} />
-                <span>Instagram</span>
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        
       </header>
       <hr className={styles.divider} />
     </>
