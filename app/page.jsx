@@ -9,6 +9,7 @@ import Works from "@/components/Works/works";
 import Estudos from "@/components/Estudos/estudos";
 import Footer from "@/components/Footer/footer";
 import MyCarouselTwo from "@/components/Carro/Carro";
+import SectionWithCarousel from "@/components/SectionsAndCarro";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Main />
       <About />
       <Works />
+      <SectionWithCarousel />
       {/* <Footer /> */}
       {/* <MyCarouselTwo /> */}
       {/* <Card />      */}

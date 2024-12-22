@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 import { motion } from 'framer-motion';
 import Carousel from "../Carousel/carousel";
 import MyCarouselTwo from "../Carro/Carro";
+import SectionWithCarousel from "../SectionsAndCarro";
 
 export default function Works() {    
 
@@ -11,7 +12,7 @@ export default function Works() {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.3, // Anima os filhos em sequência
+                staggerChildren: 0.3,
             },
         },
     };
@@ -28,7 +29,7 @@ export default function Works() {
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }} // Animação ocorre sempre que 20% do componente estiver visível
+            viewport={{ once: false, amount: 0.2 }} 
         >
             <motion.div className={styles.title} variants={itemVariants}>
                 <h1>Projetos</h1>
@@ -40,8 +41,8 @@ export default function Works() {
                     <span className={styles.dot}></span>
                 </motion.div>
                 <br />                
-                    <MyCarouselTwo />
             </motion.div>
+                    {/* <SectionWithCarousel /> */}
         </motion.div>
     );
 }

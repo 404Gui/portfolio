@@ -9,7 +9,8 @@ export default function Home() {
             <Header />
             <Main />
             <About />
-            <Works />
+            {/* <Works /> */}
+            {/* <SectionWithCarousel /> */}
         </div>
     )
 }

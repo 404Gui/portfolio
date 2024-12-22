@@ -15,7 +15,7 @@ const MyCarousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2, // Exibe 3 slides por vez
+    slidesToShow: 1, // Exibe 3 slides por vez
     slidesToScroll: 1,
     centerMode: false,
     nextArrow: <NextArrow />,
@@ -84,7 +84,8 @@ const MyCarousel = () => {
             key={slide.id} 
             className={styles.slide} 
             onClick={() => handleCardClick(slide)}
-          >
+            >
+            <h3 className={styles.name}>{slide.name}</h3>
             <div 
               className={styles.card}
               style={{
@@ -93,10 +94,10 @@ const MyCarousel = () => {
                 backgroundPosition: "center",
               }}
             >
+              <section></section>
               <div className={styles.descricao}>
-                <h3 className={styles.name}>{slide.name}</h3>
-                <p className={styles.role}>{slide.role}</p>
               </div>
+                <p className={styles.role}>{slide.role}</p>
             </div>
           </div>
         ))}

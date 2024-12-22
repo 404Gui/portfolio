@@ -31,8 +31,10 @@
   }
 
   .texto {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Ubuntu', sans-serif;
     margin-left: 1rem;
+    line-height: 20px;
+    
   }
 
   .content{

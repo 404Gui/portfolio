@@ -39,10 +39,15 @@ export default function About() {
                     <h1 className={styles.title}>Sobre mim</h1>
                     <p className={styles.code}>&lt;p&gt;</p> <br />
                     <p className={styles.texto}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et erat justo. Donec et purus blandit, feugiat erat sed, aliquet lorem. Sed ultrices maximus tempor. Cras nulla ex, lobortis at feugiat non, pellentesque eu quam. Maecenas euismod bibendum ultricies. Suspendisse eget urna eget justo sagittis vestibulum. Phasellus cursus eros vitae justo ultrices aliquet. Nunc facilisis mollis quam, a fermentum leo. Aenean accumsan pharetra velit vel feugiat. Nulla ac egestas ante. Morbi sed porttitor arcu. Duis blandit rhoncus risus, vel accumsan dui finibus sed. <br /> <br />
+                        E aí! Meu nome é Guilherme Pappi e sou apaixonado por tecnologia e programação. Criei este portfólio para compartilhar meus trabalhos, ideias e, quem sabe, conectar com outras pessoas que também curtem tecnologia e inovação. Além disso, foi uma forma de me desafiar e construir algo do zero, colocando em prática o que tenho aprendido com desenvolvimento front-end como back-end.
 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et erat justo. Donec et purus blandit, feugiat erat sed, aliquet lorem. Sed ultrices maximus tempor. Cras nulla ex, lobortis at feugiat non, pellentesque eu quam. Maecenas euismod bibendum ultricies. Suspendisse eget urna eget justo sagittis vestibulum. Phasellus cursus eros vitae justo ultrices aliquet. Nunc facilisis mollis quam, a fermentum leo. Aenean accumsan pharetra velit vel feugiat. Nulla ac egestas ante. Morbi sed porttitor arcu. Duis blandit rhoncus risus, vel accumsan dui finibus sed.
-                    </p> <br />
+                        <br /> <br />
+
+                        Tenho experiência com desenvolvimento web e, atualmente, estou atuando como desenvolvedor júnior na 2Clix, uma empresa que oferece soluções tecnológicas para a gestão inteligente de contact centers. Essa oportunidade tem sido fundamental para meu aprendizado e crescimento profissional, permitindo-me trabalhar com tecnologias como ASP.NET e contribuir em projetos desafiadores.
+                        
+                        <br /> <br />
+                        </p>
+
                     <p className={styles.code}>&lt;p&gt;</p>
                 </motion.div>
             </div>

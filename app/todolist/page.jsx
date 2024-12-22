@@ -102,9 +102,6 @@ export default function Board() {
   };
   
 
- 
-  
-
   const handleDeleteItem = (index) => {
     const updatedItems = items.filter((_, i) => i !== index);
     setItems(updatedItems);
@@ -143,7 +140,7 @@ export default function Board() {
   
   return (
     <>
-      <div className={`${styles.div} ${dark ? styles.darkTheme : styles.lightTheme}`}>
+      <div className={`${styles.wrapper} ${dark ? styles.darkTheme : styles.lightTheme}`}>
         <div className={styles.conteudo}>
           <h3>TODO-LIST</h3>
 
@@ -166,6 +163,13 @@ export default function Board() {
                 '& .MuiOutlinedInput-root': {
                   height: '40px',
                   width: '400px',
+                  '@media (max-width: 600px)': {
+                    width: '300px',
+                    '@media (max-width: 500px)': {
+                      width: '170px',
+                    }
+                  },
+                  
                   '& fieldset': {
                     borderColor: dark ? '#F7F7F7' : '#6C63FF',
                   },
@@ -250,8 +254,7 @@ export default function Board() {
                       <button onClick={() => handleEditItem(index)}><EditIcon /></button>
                       <button onClick={() => handleDeleteItem(index)}><DeleteIcon /></button>
                     </div>
-                    <br/>
-                    {/* <hr className={styles.customHr} /> */}
+                    <br/>                    
                   </li>
                 ))
               ) : (

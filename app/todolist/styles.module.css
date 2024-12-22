@@ -1,11 +1,16 @@
-.div {
-    padding: 10rem;
-}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding-top: 7rem;
+    min-height: 100vh;
+  }
+  
 
 .lightTheme {
     color: black;
     background: #F7F7F7;
-    height: 100vh;
+          
 }
 
 .darkTheme {
@@ -13,7 +18,7 @@
     background: #1E1E1E;
 }
 
-.div h3 {
+.wrapper h3 {
     text-align: center;
     margin-bottom: 18px;
 }
@@ -30,25 +35,39 @@
 
 .checkboxContainer {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-    margin: 10px 15rem;   
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 600px;
+    width: 90%;
+    border-bottom: 1px solid #333;
+    
+    box-sizing: border-box;
 }
 
-.checkboxContainer p {
-    flex: 1; /* Para ocupar o espaço disponível */
-    white-space: nowrap; /* Impede o texto de quebrar em várias linhas */
-    overflow: hidden; /* Oculta o excesso de texto */
-    text-overflow: ellipsis; /* Adiciona reticências (...) no final */
-}
+    .checkboxContainer p {
+        flex: 1;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .checkboxContainer .checkbox{
+        color: #6C63FF
+    }
+
+
 
 .buttonsEditDelete {
     display: flex;
-    gap: 10px; 
-    cursor: pointer;
+    gap: 10px;
     color: grey;
-    margin-left: auto; 
+    cursor: pointer;
+    flex-shrink: 0;
 }
+
 
 .addButton {
     position: fixed;
@@ -56,10 +75,9 @@
     right: 240px; 
     cursor: pointer;
     color: #6C63FF;
-    text-align: center; /* Centraliza o conteúdo dentro do botão */
-    z-index: 1000; /* Garante que o botão fique acima de outros elementos, se necessário */
+    text-align: center;
+    z-index: 1000;
 }
-
 
 .closeAddButtons {
     display: flex;
@@ -93,14 +111,15 @@
 
 
 @media (max-width: 868px) {
-    .div {
-        padding: 2rem;
+    .wrapper {
+        /* padding-left: 3rem;
+        padding-right: 3rem; */
     }
 
-    .checkboxContainer {
+    /* .checkboxContainer {
         flex-direction: column;
         margin: 10px 1rem;
-    }
+    } */
 
     .customHr {
         width: 100%;
@@ -114,22 +133,7 @@
     }
 }
 
-@media (max-width: 480px) {
-    .div {
-        padding: 1rem;
-    }
-
-    .searchContent {
-        gap: 8px;
-    }
-
-    .input {
-        width: 100%;
-    }
-
-    .checkboxContainer {
-        margin: 10px 0;
-    }
+@media (max-width: 480px) {  
 
     .addButton {
         margin: 5% auto 0 auto;
@@ -137,19 +141,11 @@
     }
 
     .buttonsEditDelete {
-        flex-direction: column;
         align-items: center;
     }
 }
 
-.checkboxContainer .checkbox{
-    color: #6C63FF
-}
 
-/* .buttonSaveEditModal {    
-    background-color: #6C63FF;
-    color: #F7F7F7;
-} */
 
 .buttonCloseModal {
     background-color: transparent;
