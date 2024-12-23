@@ -5,28 +5,29 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./styles.module.css";
 import Image from "next/image";
-
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 
 const MyCarousel = () => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1, // Exibe 3 slides por vez
+    slidesToShow: 2, // Padrão para telas maiores
     slidesToScroll: 1,
     centerMode: false,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 768, // Quando a largura da tela for menor que 768px
+        settings: {
+          slidesToShow: 1, // Exibe 1 slide por vez
+        },
+      },
+    ],
   };
-
-  // const slides = [
-  //   { id: 1, description: 'Uma simples lista de tarefas para voce não se perder!', title: "To-Do List", imageUrl: "/TODOLISST.png", url: "/todolist" },
-  //   { id: 2, description: 'Descubra a previsão do tempo antes de sair de casa', title: "Previsão do tempo", imageUrl: "/wheater.svg", url: "/em-desenvolvimento" },
-  //   { id: 3, description: 'Em andamento...', title: "Projeto 3", imageUrl: "/coding.svg", url: "/em-desenvolvimento" },
-  // ];
+  
 
   const slides = [
     { 
@@ -68,13 +69,12 @@ const MyCarousel = () => {
   ];
   
   const handleCardClick = (slide) => {
-    if (slide.url != "") {
+    if (slide.url !== "") {
       window.location.href = slide.url;
     } else {
       toast.warning("Projeto em andamento!");
     }
   };
-  
 
   return (
     <div className={styles.carouselContainer}>
@@ -84,20 +84,18 @@ const MyCarousel = () => {
             key={slide.id} 
             className={styles.slide} 
             onClick={() => handleCardClick(slide)}
-            >
+          >
             <h3 className={styles.name}>{slide.name}</h3>
-            <div 
-              className={styles.card}
-              style={{
-                backgroundImage: `url(${slide.backgroundUrl})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
+            <div className={styles.card}>
+              <img 
+                src={slide.backgroundUrl} 
+                alt={slide.name} 
+                className={styles.backgroundImage} 
+              />
               <section></section>
               <div className={styles.descricao}>
               </div>
-                <p className={styles.role}>{slide.role}</p>
+              <p className={styles.role}>{slide.role}</p>
             </div>
           </div>
         ))}
@@ -105,7 +103,6 @@ const MyCarousel = () => {
       <ToastContainer />
     </div>
   );
-  
 };
 
 export default MyCarousel;

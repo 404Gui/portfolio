@@ -44,12 +44,14 @@
     gap: 1rem;
 }
 
+
 .navlinks {
     list-style: none;
     font-size: 16px;
     font-family: 'IBM Plex Mono', monospace;
-    font-weight: 400; /* Regular */
+    font-weight: 400;
 }
+
 
 .navlinks:hover, .socialLinks:hover {
     color: #12F7D6;
@@ -108,4 +110,10 @@
         gap: 32px;
     }
   }
+
+  @media (max-width: 468px) {
+    .navlinks {
+      font-size: 14px;
+    }
+}
   

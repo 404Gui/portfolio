@@ -1,34 +1,154 @@
 .sectionContainer {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 0 1rem 1rem 1rem;
+  background-color: #0B0C10; /* Cor semelhante à imagem */
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .sectionContainer {
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem;
-    margin: 0 1rem 1rem 1rem;
-    background-color: #0B0C10; /* Cor semelhante à imagem */
-    border-radius: 10px;
   }
-  
+}
+
+.textSection {
+  flex: 1;
+  color: #66FCF1;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
   .textSection {
-    flex: 1;
-    color: #66FCF1;
-    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
   }
-  
-  .textSection h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #A56CFF;
-  }
-  
-  .textSection p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #C5C6C7;
-  }
-  
+}
+
+.textSection h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #A56CFF;
+}
+
+.textSection p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #C5C6C7;
+}
+
+.carouselSection {
+  flex: 1.5;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
   .carouselSection {
-    flex: 1.5;
     max-width: 60%;
   }
-  
+}
+
+.carouselContainer {
+  width: 100%;
+}
+
+.slide {
+  padding: 1rem;
+}
+
+.card {
+  border: 2px solid #A56CFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 1.5rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  height: 300px; 
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 205px;  
+  width: 100%;
+  height: 30%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.descricao {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: end;
+  height: 100%;
+  margin-top: 185px;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 7px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: #f0f0f0;
+  position: relative;
+  z-index: 2;
+}
+
+.slickNext,
+.slickPrev {
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.slickNext {
+  right: -10px;
+}
+
+.slickPrev {
+  left: -10px;
+}
+
+.slick-slide {
+  padding: 0 10px;
+}

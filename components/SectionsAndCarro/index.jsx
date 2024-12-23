@@ -1,19 +1,19 @@
-'use client'
+'use client';
 import React from 'react';
 import MyCarousel from '../Carro/Carro';
 import { motion } from 'framer-motion';
-import styles from "./styles.module.css"
+import styles from './styles.module.css';
 
 const SectionWithCarousel = () => {
   return (
-    <motion.div 
+    <motion.div
       className={styles.sectionContainer}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ amount: 0.2 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
     >
-      <motion.div 
+      <motion.div
         className={styles.textSection}
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -24,7 +24,7 @@ const SectionWithCarousel = () => {
         <p>Explore meus projetos desenvolvidos, que abordam soluções simples e práticas para o dia a dia.</p>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         className={styles.carouselSection}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
