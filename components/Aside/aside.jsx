@@ -10,15 +10,7 @@ export default function CardTwo() {
     return (
 
         <section className={styles.card}>
-            <img src="/codeLines.svg" alt="React Logo" className={styles.profileImage}/>         
-            {/* <img src="/jsLogo.png" alt="React Logo" className={styles.profileImage}/>         
-            <img src="/htmlLogo.svg" alt="React Logo" className={styles.profileImage}/>         
-            <img src="/cssLogo.svg" alt="React Logo" className={styles.profileImage}/>          */}
-            {/* <span>HTML</span> <br />
-            <span>CSS</span> <br />
-            <span>JS</span> <br />
-            <span>REACT</span> */}
-            {/* <button className={styles.downloadBtn}>Download CV</button> */}
+            <img src="/codeLines.svg" alt="React Logo" className={styles.profileImage}/>
         </section>
 
     )

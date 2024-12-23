@@ -2,9 +2,8 @@
 
 .about {
     padding: 2rem; 
-    margin: 0 auto; /* centraliza o container horizontalmente */
-    max-width: 1200px; /* limita a largura */
-    /* height: 100vh; */
+    margin: 0 auto;
+    max-width: 1200px;    
     
   }
   
@@ -27,8 +26,9 @@
     margin: 2rem 0;
     margin-left: 1rem;
     font-family: 'Ubuntu', sans-serif;
-
   }
+
+
 
   .texto {
     font-family: 'Ubuntu', sans-serif;
@@ -41,14 +41,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
   }
 
   .code {
     color: var(--verde-claro);
     font-size: 10px;
     font-family: 'IBM Plex Mono', monospace;
-    font-weight: 400; /* Regular */
+    font-weight: 400;
 }
 
 .iconLine {
@@ -62,6 +61,12 @@
   margin: 0 10px;
   font-size: 24px; 
   color: #66FCF1;
+}
+
+@media (max-width: 468px) {
+  .title {
+    text-align: center;
+  }
 }
 
 

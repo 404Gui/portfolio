@@ -10,19 +10,22 @@ export default function Header() {
       <header className={styles.header}>
         <div className={styles.logo}>
             <span className={styles.code}>&lt;C/&gt;GuilhermePappi</span>
-            {/* //<div className={styles.name}>GuilhermePappi</div> */}
             <nav className={styles.navbar}>
             <ul className={styles.navmenu}>
               <li className={styles.navlinks}>
-                <Link href="/home">
+                <Link href="#home">
                   Home
                 </Link>              
               </li>
               <li className={styles.navlinks}>
-                  Sobre mim
+              <Link href="#about">
+                  Sobre mim                  
+              </Link> 
               </li>
               <li className={styles.navlinks}>
+              <Link href="#projects">
                   Projetos
+              </Link>                   
               </li>            
             </ul>
             </nav>

@@ -28,7 +28,7 @@ export default function About() {
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
         >
-            <div className={styles.about} id="sobre-mim">
+            <div className={styles.about} id="about">
                 <motion.div className={styles.logos} variants={itemVariants}>
                     <FontAwesomeIcon icon={faCode} className={styles.icon} />
                     <FontAwesomeIcon icon={faLaptopCode} className={styles.icon} />
@@ -39,7 +39,7 @@ export default function About() {
                     <h1 className={styles.title}>Sobre mim</h1>
                     <p className={styles.code}>&lt;p&gt;</p> <br />
                     <p className={styles.texto}>
-                        E aí! Meu nome é Guilherme Pappi sempre gostei de tecnologia, programação criação de sites e sou um apoiador da cultura open source. Criei este portfólio para compartilhar meus trabalhos, ideias e, quem sabe, conectar com outras pessoas que também curtem tecnologia e inovação. Além disso, foi uma forma de me desafiar e construir algo do zero, colocando em prática o que tenho aprendido com desenvolvimento front-end e back-end.
+                        E aí! Meu nome é Guilherme Pappi sempre gostei de tecnologia, programação, criação de sites e sou um apoiador da cultura open source. Criei este portfólio para compartilhar meus trabalhos, ideias e, quem sabe, conectar com outras pessoas que também curtem tecnologia e inovação. Além disso, foi uma forma de me desafiar e construir algo do zero, colocando em prática o que tenho aprendido com desenvolvimento front-end e back-end.
 
                         <br /> <br />
 

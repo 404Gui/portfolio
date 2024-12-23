@@ -70,7 +70,7 @@
     font-size: 14px;
     gap: 5px;
     font-family: 'IBM Plex Mono', monospace;
-    font-weight: 400; /* Regular */
+    font-weight: 400;
 }
 
 .socialLinks a {
@@ -113,7 +113,7 @@
 
   @media (max-width: 468px) {
     .navlinks {
-      font-size: 14px;
+      font-size: 12px;
     }
 }
   

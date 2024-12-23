@@ -1,8 +1,6 @@
 'use client';
 import styles from "./styles.module.css";
 import { motion } from 'framer-motion';
-import Carousel from "../Carousel/carousel";
-import MyCarouselTwo from "../Carro/Carro";
 import SectionWithCarousel from "../SectionsAndCarro";
 
 export default function Works() {    
@@ -24,25 +22,32 @@ export default function Works() {
 
     return (
         <motion.div
-            className={styles.div}
-            id="works"
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }} 
+          className={styles.div}
+          id="works"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
         >
-            <motion.div className={styles.title} variants={itemVariants}>
-                <h1>Projetos</h1>
-                <br />
-                <p>Seção dedicada a pequenos projetos</p>
-                <motion.div className={styles.decorativeLine} variants={itemVariants}>
-                    <span className={styles.dot}></span>
-                    <span className={styles.line}></span>
-                    <span className={styles.dot}></span>
-                </motion.div>
-                <br />                
+          <motion.div className={styles.title} variants={itemVariants} id="projects">
+            <h1>Projetos</h1>
+            <br />
+            <p>Seção dedicada a pequenos projetos</p>
+            <motion.div className={styles.arrowsContainer} variants={itemVariants}>
+              <motion.div
+                className={styles.arrow}
+                animate={{ y: [0, 10, 0] }}
+                transition={{
+                  duration: 1,
+                  repeat: Infinity,
+                }}
+              >
+                ↓
+              </motion.div>
             </motion.div>
-                    {/* <SectionWithCarousel /> */}
+            <br />
+          </motion.div>
+          {/* <SectionWithCarousel /> */}
         </motion.div>
     );
 }
