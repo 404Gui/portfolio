@@ -13,16 +13,16 @@ const MyCarousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2, // Padrão para telas maiores
+    slidesToShow: 2,
     slidesToScroll: 1,
     centerMode: false,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 768, // Quando a largura da tela for menor que 768px
+        breakpoint: 768, 
         settings: {
-          slidesToShow: 1, // Exibe 1 slide por vez
+          slidesToShow: 1, 
         },
       },
     ],
@@ -32,7 +32,7 @@ const MyCarousel = () => {
   const slides = [
     { 
       id: 1, 
-      name: 'Todo List', 
+      name: 'To-do List', 
       role: "Uma lista de tarefas simples, mas altamente útil, para ajudar você a se organizar e não esquecer de nada importante!", 
       logoUrl: "/stack-overflow-logo.png", 
       avatarUrl: "/todolist",
@@ -51,19 +51,19 @@ const MyCarousel = () => {
     { 
       id: 3, 
       name: 'Lorem ipsum', 
-      role: "Lorem ipsum dolor sit amet, consectetur adipiscing elit", 
+      role: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 
       logoUrl: "/luizalabs-logo.png", 
       avatarUrl: "/avatar3.png",
-      backgroundUrl: "/blur.png",
+      backgroundUrl: "/lorem.png",
       url: "",      
     },
     { 
       id: 4, 
       name: 'Lorem ipsum', 
-      role: "Lorem ipsum dolor sit amet, consectetur adipiscing elit", 
+      role: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 
       logoUrl: "/google-logo.png", 
       avatarUrl: "/avatar4.png",
-      backgroundUrl: "/blur.png",
+      backgroundUrl: "/lorem.png",
       url: "",      
     },
   ];
@@ -95,8 +95,8 @@ const MyCarousel = () => {
               <section></section>
               <div className={styles.descricao}>
               </div>
-              <p className={styles.role}>{slide.role}</p>
             </div>
+              <p className={styles.role}>{slide.role}</p>
           </div>
         ))}
       </Slider>

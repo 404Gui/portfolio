@@ -35,7 +35,7 @@
   z-index: 0;
 }
 
-.card::before {
+/* .card::before {
   content: "";
   position: absolute;
   top: 205px;  
@@ -43,7 +43,7 @@
   height: 30%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
-}
+} */
 
 .avatar {
   border-radius: 50%;
@@ -75,6 +75,8 @@
   color: #f0f0f0;
   position: relative;
   z-index: 2;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .slickNext,

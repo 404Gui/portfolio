@@ -27,12 +27,10 @@ const Carousel = ({ projects }) => {
 
   return (
     <div style={{ display: "flex", alignItems: "center" }}>
-      {/* Botão de navegação anterior com estilo redondo */}
       <button onClick={prevProject} className={styles.roundButtonStyle}>
         <FontAwesomeIcon icon={faArrowLeft} />
       </button>
 
-      {/* Exibe o card atual com a imagem */}
       <div
         style={{
           margin: "0 1rem",
@@ -62,7 +60,6 @@ const Carousel = ({ projects }) => {
         </p>
       </div>
 
-      {/* Botão de navegação próximo com estilo redondo */}
       <button onClick={nextProject} className={styles.roundButtonStyle}>
         <FontAwesomeIcon icon={faArrowRight} />
       </button>
