@@ -39,13 +39,15 @@ export default function About() {
                     <h1 className={styles.title}>Sobre mim</h1>
                     <p className={styles.code}>&lt;p&gt;</p> <br />
                     <p className={styles.texto}>
-                        E aí! Meu nome é Guilherme Pappi sempre gostei de tecnologia, programação, criação de sites e sou um apoiador da cultura open source. Criei este portfólio para compartilhar meus trabalhos, ideias e, quem sabe, conectar com outras pessoas que também curtem tecnologia e inovação. Além disso, foi uma forma de me desafiar e construir algo do zero, colocando em prática o que tenho aprendido com desenvolvimento front-end e back-end.
-
+                        Meu nome é Guilherme Pappi, sou desenvolvedor apaixonado por tecnologia, desenvolvimento web, criação de aplicações e tudo que envolve programação. Também sou um grande apoiador da cultura open source. Criei este portfólio para compartilhar meus trabalhos, ideias e, quem sabe, conectar com outras pessoas que também curtem tecnologia e inovação.
                         <br /> <br />
 
-                        Tenho experiência com desenvolvimento web e, atualmente, estou atuando como desenvolvedor júnior na 2Clix, uma empresa que oferece soluções tecnológicas para a gestão inteligente de contact centers. Essa oportunidade tem sido fundamental para meu aprendizado e crescimento profissional, permitindo-me trabalhar com tecnologias como ASP.NET e contribuir em projetos desafiadores.
-                        
+                        Gosto de explorar novas tecnologias e aplicá-las na prática em projetos, especialmente no desenvolvimento web e na criação de APIs. Tenho experiência com Node.js, TypeScript, Next.JS, React e ferramentas como Postman e Docker.
                         <br /> <br />
+
+                        Atualmente, atuo como desenvolvedor na 2Clix, focado principalmente no desenvolvimento front-end e também adquirindo experiência com tecnologias como SQL, C#, .NET e ASP.NET Core MVC, o que me permite expandir meus conhecimentos constantemente.                                                
+                        <br /> <br />
+
                         </p>
 
                     <p className={styles.code}>&lt;p&gt;</p>
