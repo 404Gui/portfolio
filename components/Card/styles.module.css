@@ -49,22 +49,61 @@
     height: 100px;
     border-radius: 50%;
     margin-bottom: 1rem;
-    border: 3px solid #00ffa6;
     object-fit: cover;
-    /* text-align: center; */
+    position: relative;
+    border: 3px solid transparent;
+    background: linear-gradient(180deg, rgba(0, 255, 255, 0.7), rgba(138, 43, 226, 0.5)) padding-box,
+                linear-gradient(180deg, #7f00ff, #00ffff) border-box; 
+    box-shadow: 0 0 12px rgba(127, 0, 255, 0.7), 0 0 20px rgb(0 255 255 / 23%);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 
-  }
+.profileImage:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 18px rgba(127, 0, 255, 1), 0 0 35px rgba(0, 255, 255, 0.8);
+    animation: pulseNeon 1.5s infinite alternate;
+}
 
-  .skills {
-    margin-top: 16px;
-  }
-  
-  .skills span {
-    background-color: #444;
-    padding: 5px 10px;
-    border-radius: 15px;
-    margin: 5px;    
-  }
+@keyframes pulseNeon {
+    from {
+        box-shadow: 0 0 18px rgba(127, 0, 255, 0.8), 0 0 35px rgba(0, 255, 255, 0.6);
+    }
+    to {
+        box-shadow: 0 0 22px rgba(127, 0, 255, 1), 0 0 40px rgba(0, 255, 255, 1);
+    }
+}
+.skillsContainer {
+  position: relative;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(0, 255, 255, 0.1), rgba(127, 0, 255, 0.1));
+  box-shadow: 0px 4px 15px rgba(127, 0, 255, 0.3), 0px 0px 10px rgba(0, 255, 255, 0.3);
+
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+@keyframes infiniteScroll  {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.skillsWrapper {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: infiniteScroll 25s linear infinite;
+}
+
+.skillIcon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.6));
+}
+
   
   .downloadBtn {
     background-color: white;
@@ -94,7 +133,6 @@ ul .empresa:hover {
   .card ul {
     list-style-type: none;
     text-align: left;
-    line-height: 1.6rem
   }
 
   .card li {
@@ -103,6 +141,7 @@ ul .empresa:hover {
     list-style: none;
     /* gap: 10px; */
     font-size: 14px;
+    margin-bottom: 15px;
   }
 
   .card li svg {
