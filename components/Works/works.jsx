@@ -1,6 +1,10 @@
 'use client';
 import styles from "./styles.module.css";
 import { motion } from 'framer-motion';
+import { FiChevronDown } from 'react-icons/fi'; // Importando o ícone de seta
+
+
+
 import SectionWithCarousel from "../SectionsAndCarro";
 
 export default function Works() {    
@@ -30,9 +34,9 @@ export default function Works() {
           viewport={{ once: false, amount: 0.2 }}
         >
           <motion.div className={styles.title} variants={itemVariants} id="projects">
-            <h1>Projetos</h1>
-            <br />
-            <p>Seção dedicada a pequenos projetos</p>
+            <h1>Projetos</h1> <br />            
+            <em>“A lot of times, people don’t know what they want until you show it to them”</em> <br/>
+            — Steve Jobs
             <motion.div className={styles.arrowsContainer} variants={itemVariants}>
               <motion.div
                 className={styles.arrow}
@@ -42,7 +46,8 @@ export default function Works() {
                   repeat: Infinity,
                 }}
               >
-                ↓
+                <FiChevronDown size={40} />
+                
               </motion.div>
             </motion.div>
             <br />

@@ -39,13 +39,14 @@ export default function About() {
                     <h1 className={styles.title}>Sobre mim</h1>
                     <p className={styles.code}>&lt;p&gt;</p> <br />
                     <p className={styles.texto}>
-                        Meu nome é Guilherme Pappi, sou desenvolvedor apaixonado por tecnologia, desenvolvimento web, criação de aplicações e tudo que envolve programação. Também sou um grande apoiador da cultura open source. Criei este portfólio para compartilhar meus trabalhos, ideias e, quem sabe, conectar com outras pessoas que também curtem tecnologia e inovação.
+                    👋 Olá! Eu me chamo Guilherme Pappi, sou desenvolvedor apaixonado por tecnologia, desenvolvimento web, criação de aplicações e tudo que envolve programação. Tenho 2 anos de experiencia com desenvolvimento e sou um grande apoiador da cultura open source. Criei este portfólio para compartilhar meus trabalhos, ideias e, quem sabe, conectar com outras pessoas que também curtem tecnologia e inovação.
                         <br /> <br />
 
-                        Gosto de explorar novas tecnologias e aplicá-las na prática em projetos, especialmente no desenvolvimento web e na criação de APIs. Tenho experiência com Node.js, TypeScript, Next.JS, React e ferramentas como Postman e Docker.
-                        <br /> <br />
+                        Pode-se dizer que sou um grande entusiasta da programação. Gosto de explorar tecnologias e aplicá-las na prática em projetos, especialmente no desenvolvimento web e na criação de APIs. Em meus projetos gosto de utilizar tecnologias como TypeScript, Node, React, Next,  além de outras ferramentas para estar em constante aprendizado e crescimento. De 2024 até então atuo como desenvolvedor na 2Clix, focado no desenvolvimento front-end e back-end. 
+                        {/* <br /> <br /> */}
 
-                        Atualmente, atuo como desenvolvedor na 2Clix, focado principalmente no desenvolvimento front-end e também adquirindo experiência com tecnologias como SQL, C#, .NET e ASP.NET Core MVC, o que me permite expandir meus conhecimentos constantemente.                                                
+                        {/* De 2024 até então atuo como desenvolvedor na 2Clix, focado no desenvolvimento front-end e back-end com tecnologias como JavaScript, C# e SQL  */}
+                        {/* também adquirindo experiência com tecnologias como SQL, C#, .NET e ASP.NET Core MVC.                                            */}
                         <br /> <br />
 
                         </p>

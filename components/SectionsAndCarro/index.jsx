@@ -20,8 +20,8 @@ const SectionWithCarousel = () => {
         transition={{ duration: 0.7, delay: 0.2 }}
         viewport={{ amount: 0.2 }}
       >
-        <h1>Seção dedicada a pequenos projetos concluídos e futuros projetos</h1>
-        <p>Explore meus projetos desenvolvidos, que abordam soluções simples e práticas para o dia a dia. Em alguns projetos, utilizei a API Route do Next.js. É só clicar e testar o projeto para ver como funciona na prática e, se preferir, conferir o código no GitHub!</p>
+        <h1>Seção dedicada projetos concluídos e futuros projetos</h1>
+        <p>Dê uma olhada em alguns projetos desenvolvidos por mim, que abordam soluções simples e práticas para o dia a dia. Em alguns deles, utilizei API Routes do Next.js. É só clicar e testar o projeto para ver como funciona na prática ou, se preferir, conferir o código no GitHub!</p>
       </motion.div>
 
       <motion.div
