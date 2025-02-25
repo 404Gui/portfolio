@@ -20,6 +20,7 @@
     "@splidejs/react-splide": "^0.7.12",
     "@svgr/webpack": "^8.1.0",
     "bootstrap": "^5.3.3",
+    "flag-icon-css": "^4.1.7",
     "framer-motion": "^11.11.1",
     "next": "14.2.13",
     "next-i18next": "^15.3.1",
@@ -34,6 +35,7 @@
     "react-scroll": "^1.9.0",
     "react-slick": "^0.30.2",
     "react-toastify": "^10.0.5",
+    "react-world-flags": "^1.6.0",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.1.14"
   },

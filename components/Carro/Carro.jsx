@@ -30,24 +30,27 @@ const MyCarousel = () => {
   
 
   const slides = [
+
     { 
       id: 1, 
+      name: 'Weather Forecast', 
+      role: "Um projeto que integra a API da OpenWeather para fornecer previsões do tempo em tempo real para qualquer localidade, com suporte a buscas por cidade, país e CEP.", 
+      logoUrl: "/nubank-logo.png", 
+      avatarUrl: "/avatar2.png",
+      backgroundUrl: "/weather-background.png",
+      url: "https://weatherforecast-project-nine.vercel.app",      
+    },
+
+    { 
+      id: 2, 
       name: 'To-do List', 
       role: "Uma lista de tarefas simples, mas altamente útil, para ajudar você a se organizar e não esquecer de nada importante!", 
       logoUrl: "/stack-overflow-logo.png", 
       avatarUrl: "/todolist",
-      backgroundUrl: "/background-todo.png",
+      backgroundUrl: "/todolist-background.png",
       url: "/todolist",
     },
-    { 
-      id: 2, 
-      name: 'Weather Forecast', 
-      role: "Um projeto em desenvolvimento que utiliza uma API pública para fornecer informações atualizadas sobre a previsão do tempo.", 
-      logoUrl: "/nubank-logo.png", 
-      avatarUrl: "/avatar2.png",
-      backgroundUrl: "/blur.png",
-      url: "",      
-    },
+    
     { 
       id: 3, 
       name: 'Lorem ipsum', 

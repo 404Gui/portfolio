@@ -1,14 +1,13 @@
 import styles from "./styles.module.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots } from '@fortawesome/free-solid-svg-icons';
 import Card from "../Card/card";
-import CardTwo from "../Aside/aside";
-
-import About from '../About/about'
 import Titulo from "../Titulo/titulo";
+import TerminalAnimation from "../Hello/hello";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function Main() {
+
+  
   return (
 
     <div>
@@ -43,6 +42,7 @@ export default function Main() {
               </main>
               <aside className={styles.aside}>
                 {/* <CardTwo /> */}
+                {/* <TerminalAnimation/> */}
               </aside>
             </div>
 

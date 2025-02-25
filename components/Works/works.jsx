@@ -1,7 +1,7 @@
 'use client';
 import styles from "./styles.module.css";
 import { motion } from 'framer-motion';
-import { FiChevronDown } from 'react-icons/fi'; // Importando o ícone de seta
+import { FiChevronDown } from 'react-icons/fi';
 
 
 

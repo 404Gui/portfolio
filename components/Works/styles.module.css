@@ -19,7 +19,7 @@
 .title h1 {
     color: var(--verde-claro);
     font-family: 'Ubuntu', sans-serif;
-}
+  }
 
 .iconLine {
     display: flex;
