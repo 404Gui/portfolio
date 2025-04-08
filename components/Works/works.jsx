@@ -2,10 +2,7 @@
 import styles from "./styles.module.css";
 import { motion } from 'framer-motion';
 import { FiChevronDown } from 'react-icons/fi';
-
-
-
-import SectionWithCarousel from "../SectionsAndCarro";
+import SectionCarousel from "../SectionCarousel/SectionCarousel";
 
 export default function Works() {    
 

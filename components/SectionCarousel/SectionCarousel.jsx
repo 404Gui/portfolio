@@ -4,7 +4,7 @@ import MyCarousel from '../Carro/Carro';
 import { motion } from 'framer-motion';
 import styles from './styles.module.css';
 
-const SectionWithCarousel = () => {
+const SectionCarousel = () => {
   return (
     <motion.div
       className={styles.sectionContainer}
@@ -32,9 +32,10 @@ const SectionWithCarousel = () => {
         viewport={{ amount: 0.2 }}
       >
         <MyCarousel />
+        
       </motion.div>
     </motion.div>
   );
 };
 
-export default SectionWithCarousel;
+export default SectionCarousel;

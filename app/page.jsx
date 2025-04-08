@@ -1,15 +1,9 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "@/components/Header/header";
 import Main from "@/components/Main/page";
-import Aside from "@/components/Aside/aside";
-import Card from "@/components/Card/card";
 import About from "@/components/About/about";
 import Works from "@/components/Works/works";
-import Estudos from "@/components/Estudos/estudos";
-import Footer from "@/components/Footer/footer";
-import MyCarouselTwo from "@/components/Carro/Carro";
-import SectionWithCarousel from "@/components/SectionsAndCarro";
+import SectionCarousel from "@/components/SectionCarousel/SectionCarousel";
 
 export default function Home() {
   return (
@@ -18,12 +12,7 @@ export default function Home() {
       <Main />
       <About />
       <Works />
-      <SectionWithCarousel />
-      {/* <Footer /> */}
-      {/* <MyCarouselTwo /> */}
-      {/* <Card />      */}
-      {/* <Aside /> */}
-      {/* <Estudos /> */}
+      <SectionCarousel />
     </div>
   );
 }

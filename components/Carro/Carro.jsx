@@ -1,5 +1,5 @@
 'use client'
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -9,6 +9,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const MyCarousel = () => {
+  const [dragStartX, setDragStartX] = useState(0);
+  const [dragging, setDragging] = useState(false);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -28,19 +31,16 @@ const MyCarousel = () => {
     ],
   };
   
-
   const slides = [
-
     { 
       id: 1, 
       name: 'Weather Forecast', 
-      role: "Um projeto que integra a API da OpenWeather para fornecer previsões do tempo em tempo real para qualquer localidade, com suporte a buscas por cidade, país e CEP.", 
+      role: "Esse projeto integra a API da OpenWeather para fornecer previsões do tempo em tempo real para qualquer localidade!", 
       logoUrl: "/nubank-logo.png", 
       avatarUrl: "/avatar2.png",
       backgroundUrl: "/weather-background.png",
       url: "https://weatherforecast-project-nine.vercel.app",      
     },
-
     { 
       id: 2, 
       name: 'To-do List', 
@@ -50,7 +50,6 @@ const MyCarousel = () => {
       backgroundUrl: "/todolist-background.png",
       url: "/todolist",
     },
-    
     { 
       id: 3, 
       name: 'Lorem ipsum', 
@@ -70,12 +69,21 @@ const MyCarousel = () => {
       url: "",      
     },
   ];
-  
-  const handleCardClick = (slide) => {
-    if (slide.url !== "") {
-      window.location.href = slide.url;
-    } else {
-      toast.warning("Projeto em andamento!");
+
+  const handleMouseDown = (e) => {
+    setDragStartX(e.clientX);
+    setDragging(false);
+  };
+
+  const handleMouseUp = (e, slide) => {
+    const dragDistance = Math.abs(e.clientX - dragStartX);
+
+    if (dragDistance < 10) {
+      if (slide.url !== "") {
+        window.location.href = slide.url;
+      } else {
+        toast.warning("Projeto em andamento!");
+      }
     }
   };
 
@@ -86,20 +94,22 @@ const MyCarousel = () => {
           <div 
             key={slide.id} 
             className={styles.slide} 
-            onClick={() => handleCardClick(slide)}
+            onMouseDown={handleMouseDown}
+            onMouseUp={(e) => handleMouseUp(e, slide)}
           >
             <h3 className={styles.name}>{slide.name}</h3>
             <div className={styles.card}>
-              <img 
+              <Image 
                 src={slide.backgroundUrl} 
                 alt={slide.name} 
                 className={styles.backgroundImage} 
+                fill
+                style={{ objectFit: "cover" }} 
               />
               <section></section>
-              <div className={styles.descricao}>
-              </div>
+              <div className={styles.descricao}></div>
             </div>
-              <p className={styles.role}>{slide.role}</p>
+            <p className={styles.role}>{slide.role}</p>
           </div>
         ))}
       </Slider>
