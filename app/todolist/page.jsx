@@ -1,23 +1,16 @@
 'use client'
 import styles from "./styles.module.css";
-import Vazio from "@/components/Empty/empty";
-
-import { TextField, InputAdornment, Select, MenuItem, FormControl, InputLabel, Checkbox, Button, Tooltip, Modal, Box, List, ListItem, ListItemText} from '@mui/material'
-import SearchIcon from '@mui/icons-material/Search';
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
-import Brightness4OutlinedIcon from '@mui/icons-material/Brightness4Outlined';
-import EditIcon from '@mui/icons-material/Edit';
-import DeleteIcon from '@mui/icons-material/Delete';
-import AddCircleIcon from '@mui/icons-material/AddCircle';
-import { FaSearch } from 'react-icons/fa';
-
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import Header from "@/components/TodoListComponents/Header";
+import SearchBar from "@/components/TodoListComponents/SearchBar";
+import FilterSelect from "@/components/TodoListComponents/FilterSelect";
+import ThemeToggle from "@/components/TodoListComponents/ThemeToggle";
+import TaskList from "@/components/TodoListComponents/TaskList";
+import AddTaskButton from "@/components/TodoListComponents/AddTaskButton";
+import TaskModal from "@/components/TodoListComponents/TaskModal";
 
 export default function Board() {
-
-  const [value, setValue] = useState('');
   const [dark, setDark] = useState(false);
-  const [checked, setChecked] = useState(false);
   const [open, setOpen] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const [items, setItems] = useState([]);  
@@ -25,7 +18,8 @@ export default function Board() {
   const [valueFilter, setValueFilter] = useState(10);
   const [editItemIndex, setEditItemIndex] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
-  const [filteredItems, setFilteredItems] = useState(items)
+  const [filteredItems, setFilteredItems] = useState(items);
+
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => {    
@@ -137,237 +131,41 @@ export default function Board() {
   const handleChangeFilter = (event) => {
     setValueFilter(event.target.value);
   };  
-  
+
   return (
     <>
       <div className={`${styles.wrapper} ${dark ? styles.darkTheme : styles.lightTheme}`}>
         <div className={styles.conteudo}>
-          <h3>TODO-LIST</h3>
-
+          <Header dark={dark} />
+          
           <div className={styles.searchContent}>
-            <TextField
-              className={styles.TextField}
-              variant="outlined"
-              type="search"
-              label="Pesquisar tarefa"
-              onChange={(e) => setSearchTerm(e.target.value)}
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">
-                  <SearchIcon sx={{ color: dark ? '#F7F7F7' : 'black' }} />
-                  </InputAdornment>
-                ),
-              }}
-              sx={{
-                height: '40px',
-                '& .MuiOutlinedInput-root': {
-                  height: '40px',
-                  width: '400px',
-                  '@media (max-width: 600px)': {
-                    width: '300px',
-                    '@media (max-width: 500px)': {
-                      width: '170px',
-                    }
-                  },
-                  
-                  '& fieldset': {
-                    borderColor: dark ? '#F7F7F7' : '#6C63FF',
-                  },
-                  '&:hover fieldset': {
-                    borderColor: dark ? '#F7F7F7' : '#6C63FF', 
-                  },
-                  '&.Mui-focused fieldset': {
-                    borderColor: dark ? '#F7F7F7' : '#6C63FF', 
-                  },
-                },
-                '& .MuiInputLabel-root': {
-                  color: dark ? '#F7F7F7' : 'black', 
-                },
-                '& .MuiInputLabel-root.Mui-focused': {
-                  color: dark ? '#F7F7F7' : 'black',
-                },
-                '& .MuiInputBase-input': {
-                  color: dark ? '#F7F7F7' : 'black',
-                },
-              }}
-              
-            />
-
-            <FormControl sx={{ width: 100, height: '40px', backgroundColor: '#6C63FF', borderRadius: '4px' }}>
-              <InputLabel className={styles.input} id="demo-simple-select-label">
-                Options
-              </InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                value={valueFilter}
-                onChange={handleChangeFilter}
-                sx={{
-                  height: '40px',
-                  '& .MuiOutlinedInput-root': {
-                    height: '40px',
-                    color: '#F7F7F7'
-                  },
-                }}
-              >
-                <MenuItem value={10}>Todos</MenuItem>
-                <MenuItem value={20}>Completos</MenuItem>
-                <MenuItem value={30}>Incompletos</MenuItem>
-              </Select>
-            </FormControl>
-
-            <FormControl sx={{ width: 50, height: '40px' }}>
-              <Button
-                onClick={handleChangeDark}
-                sx={{
-                  width: '100%',
-                  height: '40px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  border: '1px solid',
-                  borderColor: 'rgba(0, 0, 0, 0.23)',
-                  borderRadius: '4px',
-                  backgroundColor: '#6C63FF',
-                  color: '#F7F7F7' 
-                }}
-              >
-                <Tooltip title={dark ? "Altere para o modo claro" : "Altere para o modo escuro"}>
-                  {dark ? (<Brightness4OutlinedIcon />) : (<DarkModeOutlinedIcon />) }                
-                </Tooltip>
-              </Button>
-            </FormControl>
+            <SearchBar dark={dark} searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+            <FilterSelect dark={dark} valueFilter={valueFilter} handleChangeFilter={handleChangeFilter} />
+            <ThemeToggle dark={dark} handleChangeDark={handleChangeDark} />
           </div>
 
-          <div className={styles.tarefasContainer}>
-            <ul>
-              {filteredItems.length > 0 ? (
-                filteredItems.map((item, index) => (
-                  <li key={index} className={styles.checkboxContainer}>
-                    <Checkbox
-                    className={styles.checkbox}
-                      checked={item.checked}
-                      onChange={() => handleChangeChbk(index)}                      
-                    />
-                    <p className={item.checked ? styles.riscado : ''}>{item.text}</p>
-                    <div className={styles.buttonsEditDelete}>
-                      <button onClick={() => handleEditItem(index)}><EditIcon /></button>
-                      <button onClick={() => handleDeleteItem(index)}><DeleteIcon /></button>
-                    </div>
-                    <br/>                    
-                  </li>
-                ))
-              ) : (
-                <Vazio />
-              )}
-            </ul>
-          </div>
+          <TaskList 
+            filteredItems={filteredItems} 
+            dark={dark}
+            handleChangeChbk={handleChangeChbk}
+            handleEditItem={handleEditItem}
+            handleDeleteItem={handleDeleteItem}
+          />
 
-          <div className={styles.addButton}>            
-            <AddCircleIcon fontSize="large" onClick={handleOpen} variant="contained">Adicionar Item</AddCircleIcon>
-          </div>
+          <AddTaskButton handleOpen={handleOpen} />
+          
+          <TaskModal
+            open={open}
+            dark={dark}
+            editItemIndex={editItemIndex}
+            inputValue={inputValue}
+            setInputValue={setInputValue}
+            handleClose={handleClose}
+            handleAddItem={handleAddItem}
+            handleSaveItem={handleSaveItem}
+          />
         </div>
-
-        <Modal          
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="modal-title"
-          aria-describedby="modal-description"
-        >
-          <Box 
-            className={styles.modalBox}
-            sx={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              width: 400,
-              bgcolor: dark ? '#1E1E1E' : 'background.paper',
-              color: dark ? '#F7F7F7' : 'black',
-              border: dark ? '1px solid #F7F7F7' : '',
-              borderRadius: '1rem',
-              boxShadow: 24,
-              p: 4,
-            }}
-          >
-            <h2 className={`${styles.modalTitle} ${dark ? styles.modalTitleDarkTheme : ''}`} id="modal-title">
-              {editItemIndex !== null ? 'Salvar' : "Adicionar tarefa"}</h2>
-              {/* {console.log(editItemIndex, 'aaaaaaa')} */}
-              <TextField
-                fullWidth
-                label="Digite algo.."
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-                variant="outlined"
-                sx={{
-                  '& .MuiOutlinedInput-root': {
-                    '& fieldset': {
-                      borderColor: dark ? '#F7F7F7' : '#6C63FF',
-                    },
-                    '&:hover fieldset': {
-                      borderColor: dark ? '#F7F7F7' : '#6C63FF', 
-                    },
-                    '&.Mui-focused fieldset': {
-                      borderColor: dark ? '#F7F7F7' : '#6C63FF', 
-                    },
-                  },
-                  '& .MuiInputLabel-root': {
-                    color: dark ? '#F7F7F7' : 'black', 
-                  },
-                  '& .MuiInputLabel-root.Mui-focused': {
-                    color: dark ? '#F7F7F7' : 'black',
-                  },
-                  '& .MuiInputBase-input': {
-                    color: dark ? '#F7F7F7' : 'black',
-                  },
-                }}
-                
-              />
-
-            <section className={styles.closeAddButtons}>
-              {editItemIndex !== null ?
-               (<Button 
-                className={styles.buttonSaveEditModal}
-                onClick={handleSaveItem}
-                variant="contained"
-                sx={{
-                   mt: 2,
-                   color: '#F7F7F7',
-                   bgcolor: '#6C63FF'
-                  
-                  }}
-              >
-                Salvar
-              </Button>): (<Button
-                className={styles.buttonSaveEditModal}
-                onClick={handleAddItem}
-                variant="contained"
-                sx={{
-                  mt: 2,
-                  color: '#F7F7F7',
-                  bgcolor: '#6C63FF'
-                 
-                 }}
-              >
-                Adicionar
-              </Button>)}              
-
-              <Button
-                className={styles.buttonCloseModal}
-                onClick={handleClose}
-                variant="contained"
-                sx={{
-                  mt: 2,
-                  color: '#6C63FF',
-                  bgcolor: 'transparent'                 
-                 }}
-              >
-                Fechar
-              </Button>
-            </section>
-          </Box>
-        </Modal>        
       </div>
     </>
-  ) 
+  );
 }
