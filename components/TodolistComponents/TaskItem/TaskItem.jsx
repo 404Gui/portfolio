@@ -1,4 +1,4 @@
-import styles from '../../app/todolist/styles.module.css';
+import styles from "./styles.module.css"
 
 import { Checkbox } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';

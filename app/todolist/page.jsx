@@ -1,13 +1,13 @@
 'use client'
 import styles from "./styles.module.css";
 import { useState, useEffect } from 'react';
-import Header from "@/components/TodoListComponents/Header";
-import SearchBar from "@/components/TodoListComponents/SearchBar";
-import FilterSelect from "@/components/TodoListComponents/FilterSelect";
-import ThemeToggle from "@/components/TodoListComponents/ThemeToggle";
-import TaskList from "@/components/TodoListComponents/TaskList";
-import AddTaskButton from "@/components/TodoListComponents/AddTaskButton";
-import TaskModal from "@/components/TodoListComponents/TaskModal";
+import Header from "@/components/TodolistComponents/Header/Header";
+import SearchBar from "@/components/TodolistComponents/SearchBar/SearchBar";
+import FilterSelect from "@/components/TodolistComponents/FilterSelect/FilterSelect";
+import ThemeToggle from "@/components/TodolistComponents/ThemeToggle/ThemeToggle";
+import TaskList from "@/components/TodolistComponents/TaskList/TaskList";
+import AddTaskButton from "@/components/TodolistComponents/AddTaskButton/AddTaskButton";
+import TaskModal from "@/components/TodolistComponents/TaskModal/TaskModal";
 
 export default function Board() {
   const [dark, setDark] = useState(false);

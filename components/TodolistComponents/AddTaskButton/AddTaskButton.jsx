@@ -1,4 +1,5 @@
-import styles from '../../app/todolist/styles.module.css';
+import styles from "./styles.module.css"
+
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 export default function AddTaskButton({ handleOpen }) {

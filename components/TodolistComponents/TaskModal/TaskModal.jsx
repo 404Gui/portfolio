@@ -1,4 +1,4 @@
-import styles from '../../app/todolist/styles.module.css';
+import styles from "./styles.module.css"
 
 import { Modal, Box, Button, TextField } from '@mui/material';
 

@@ -1,5 +1,4 @@
-import styles from '../../app/todolist/styles.module.css';
-
+import styles from "./styles.module.css"
 
 export default function Header({ dark }) {
   return (

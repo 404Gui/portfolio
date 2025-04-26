@@ -1,7 +1,7 @@
-import styles from '../../app/todolist/styles.module.css';
+import styles from "./styles.module.css"
 
 import Vazio from "@/components/Empty/empty";
-import TaskItem from "./TaskItem";
+import TaskItem from "../TaskItem/TaskItem";
 
 export default function TaskList({ filteredItems, dark, handleChangeChbk, handleEditItem, handleDeleteItem }) {
   return (

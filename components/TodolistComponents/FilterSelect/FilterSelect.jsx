@@ -1,4 +1,4 @@
-import styles from '../../app/todolist/styles.module.css';
+import styles from "./styles.module.css"
 
 import { FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 
