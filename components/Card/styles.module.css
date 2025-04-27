@@ -1,121 +1,146 @@
-  
-  .card {
-    position: relative;
-    background-color: linear-gradient(180deg, #0a1f1c 0%, #00090e 100%);
-    color: white;
-    padding: 1rem;
-    border-radius: 30px 0 30px 30px;
-    width: 300px;
-    text-align: center;
-    border: 5px solid transparent;
-    background-clip: padding-box;
-    height: 80%;
-
-  }
-
-  .cardNome {
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 400; /* Regular */
+.card {
+  position: relative;
+  background: linear-gradient(180deg, #0a1f1c 0%, #00090e 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 30px 0 30px 30px;
+  width: 320px;
+  text-align: center;
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  height: 85%;
+  box-shadow: 0 0 20px rgba(0, 255, 209, 0.2);
 }
 
+.card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: left;
+}
 
-  .carrer {
-    font-size: 12px;
-    margin-bottom: 20px;
-  }
+.card li {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 16px;
+  gap: 0.5rem;
+  line-height: 1.5;
+}
 
-  .infoList svg {
-    height: 1em;
-  }
-  
-  
-  .card::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    background: linear-gradient(180deg, #0a1f1c 0%, #00090e 100%);
-    border-radius: 40px 0 40px 40px;
-    z-index: -1;
-  }
-  
-  .profileImage {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    object-fit: cover;
-    position: relative;
-    border: 3px solid transparent;
-    background: linear-gradient(180deg, rgba(0, 255, 255, 0.7), rgba(138, 43, 226, 0.5)) padding-box,
-                linear-gradient(180deg, #7f00ff, #00ffff) border-box; 
-    box-shadow: 0 0 12px rgba(127, 0, 255, 0.7), 0 0 20px rgb(0 255 255 / 23%);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+.card li svg {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  color: #00ffd1;
+}
+
+.cardNome {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.carrer {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: #ccc;
+}
+
+.infoList svg {
+  height: 1.2em;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(180deg, #0a1f1c 0%, #00090e 100%);
+  border-radius: 40px 0 40px 40px;
+  z-index: -1;
+}
+
+.profileImage {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  position: relative;
+  border: 3px solid transparent;
+  background: linear-gradient(180deg, rgba(0, 255, 255, 0.7), rgba(138, 43, 226, 0.5)) padding-box,
+              linear-gradient(180deg, #7f00ff, #00ffff) border-box; 
+  box-shadow: 0 0 12px rgba(127, 0, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.23);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .profileImage:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 18px rgba(127, 0, 255, 1), 0 0 35px rgba(0, 255, 255, 0.8);
-    animation: pulseNeon 1.5s infinite alternate;
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(127, 0, 255, 1), 0 0 35px rgba(0, 255, 255, 0.8);
+  animation: pulseNeon 1.5s infinite alternate;
 }
 
 @keyframes pulseNeon {
-    from {
-        box-shadow: 0 0 18px rgba(127, 0, 255, 0.8), 0 0 35px rgba(0, 255, 255, 0.6);
-    }
-    to {
-        box-shadow: 0 0 22px rgba(127, 0, 255, 1), 0 0 40px rgba(0, 255, 255, 1);
-    }
+  from {
+    box-shadow: 0 0 18px rgba(127, 0, 255, 0.8), 0 0 35px rgba(0, 255, 255, 0.6);
+  }
+  to {
+    box-shadow: 0 0 22px rgba(127, 0, 255, 1), 0 0 40px rgba(0, 255, 255, 1);
+  }
 }
+
 .skillsContainer {
   position: relative;
-  padding: 10px;
-  margin-top: 15px;
+  padding: 12px;
+  margin-top: 24px;
   border-radius: 15px;
   overflow: hidden;
   background: linear-gradient(180deg, rgba(0, 255, 255, 0.1), rgba(127, 0, 255, 0.1));
   box-shadow: 0px 4px 15px rgba(127, 0, 255, 0.3), 0px 0px 10px rgba(0, 255, 255, 0.3);
-
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
   border: 1px solid rgba(0, 255, 255, 0.3);
 }
 
-@keyframes infiniteScroll  {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-}
-
 .skillsWrapper {
-    display: flex;
-    gap: 40px;
-    width: max-content;
-    animation: infiniteScroll 25s linear infinite;
+  display: flex;
+  gap: 32px;
+  width: max-content;
+  animation: infiniteScroll 25s linear infinite;
 }
 
 .skillIcon {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.6));
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.6));
 }
 
-  
-  .downloadBtn {
-    background-color: white;
-    color: #23272a;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    margin-top: 1rem;
-  }
-  
-  .downloadBtn:hover {
-    background-color: linear-gradient(180deg, #0a1f1c 0%, #00090e 100%);
-    color: white;
-  }
+@keyframes infiniteScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.downloadBtn {
+  background: white;
+  color: #23272a;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.downloadBtn:hover {
+  background: linear-gradient(180deg, #0a1f1c 0%, #00090e 100%);
+  color: white;
+}
 
 ul .empresa {
   margin-left: 7px;
@@ -123,24 +148,6 @@ ul .empresa {
 
 ul .empresa:hover {
   color: orange;
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
-
-  .card ul {
-    list-style-type: none;
-    text-align: left;
-  }
-
-  .card li {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    /* gap: 10px; */
-    font-size: 14px;
-    margin-bottom: 15px;
-  }
-
-  .card li svg {
-    margin-right: 7px;
-  }

@@ -18,7 +18,7 @@ export default function Card() {
         <section className={styles.card}>
             <img src="/eu_foto.jpg" alt="Profile" className={styles.profileImage} />
             <h2 className={styles.cardNome}>Guilherme</h2>
-            <p className={styles.carrer}>Desenvolvedor Full-stack Jr.</p>
+            <p className={styles.carrer}>Full-stack | Pleno</p>
             <ul className={styles.infoList}>
                 <li><FontAwesomeIcon icon={faBriefcase} /> 2024 - Atual (Dev. Front-end na 2Clix)</li>
                 <li><FontAwesomeIcon icon={faGraduationCap} /> Gestão da Tecnologia da Informação</li>

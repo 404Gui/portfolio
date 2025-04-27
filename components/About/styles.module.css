@@ -30,12 +30,15 @@
 
 
 
-  .texto {
-    font-family: 'Ubuntu', sans-serif;
-    margin-left: 1rem;
-    line-height: 30px;
+.texto {
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 1rem;
+  line-height: 30px;
+  font-size: larger;
+  line-height: 2.5rem;
+}
     
-  }
+
 
   .content{
     display: flex;
