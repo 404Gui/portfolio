@@ -36,7 +36,7 @@
 .name {
     color: #12F7D6;
     display: inline-block;
-    width: 50px;
+    width: 100px;
     text-align: center;
     white-space: nowrap;
     font-size: 20px;
@@ -138,22 +138,13 @@
     }
   }
 
-  @media (max-width: 468px) {
+  @media (max-width: 483px) {
     .navlinks {
       font-size: 12px;
     }
+
+    .socialIcons {
+        width: 17px;
+        height: 17px;
+    }
 }
-
-.teste {
-    display: flex;
-    gap: 1rem;
-    font-size: 14px;
-
-}
-
-.teste span:hover {
-    color: #12F7D6;
-    cursor: pointer;
-}
-
-  

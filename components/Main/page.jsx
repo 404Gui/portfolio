@@ -1,15 +1,13 @@
 import styles from "./styles.module.css";
+
 import { faCommentDots } from '@fortawesome/free-solid-svg-icons';
 import Card from "../Card/card";
 import Titulo from "../Titulo/titulo";
-import TerminalAnimation from "../Hello/hello";
 import { FaWhatsapp } from "react-icons/fa";
 
+
 export default function Main() {
-
-  
   return (
-
     <div>
         <Titulo />
         <div className={styles.wrapper} id="home">              
@@ -29,24 +27,20 @@ export default function Main() {
                 <div>
                   <p className={styles.code}>&lt;p&gt;</p> <br />
                   <p className={styles.texto}>
-                  Gosto de programar, resolver problemas e transformar ideias em código.<br />
-                  Com uma boa xícara de café e uma boa documentação, eu transformo <br />
-                     seu problema em solução. Se curtiu meu trabalho e quiser trocar uma ideia,
-                  </p> <br />
+                    Gosto de programar, resolver problemas e transformar ideias em código.
+                    Com uma boa xícara de café e uma boa documentação, transformo seu problema em solução.
+                    Se gostou do meu trabalho, precisar de algo ou se interessou pelo que faço, me chama —
+                     <a className={styles.talk} href="https://wa.me/+5511942109948">
+                      Vamos conversar
+                      <FaWhatsapp icon={faCommentDots} width={15} height={15} />
+                    </a>                  
+                  </p>
                   <p className={styles.code}>&lt;/p&gt;</p> <br />
-                  <a className={styles.talk} href="https://wa.me/+5511942109948">
-                    Vamos conversar
-                    <FaWhatsapp icon={faCommentDots} width={15} height={15} />
-                  </a>
                 </div>                
               </main>
-              <aside className={styles.aside}>
-                {/* <CardTwo /> */}
-                {/* <TerminalAnimation/> */}
+              <aside className={styles.aside}>                
               </aside>
             </div>
-
-    </div>
-    
+    </div>    
   );
 }

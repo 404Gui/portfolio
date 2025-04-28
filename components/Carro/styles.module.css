@@ -91,13 +91,37 @@
 }
 
 .slickNext {
-  right: -10px;
+  right: -50px;
 }
 
 .slickPrev {
-  left: -10px;
+  left: -50px;
 }
 
 .slick-slide {
   padding: 0 10px;
+}
+
+
+.role {
+  font-size: 0.9rem;
+  color: #f0f0f0;
+  position: relative;
+  z-index: 2;
+  text-align: justify;
+  margin: 1rem 0;
+}
+
+.githubLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #66fcf1;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+.githubLink:hover {
+  text-decoration: underline;
 }
