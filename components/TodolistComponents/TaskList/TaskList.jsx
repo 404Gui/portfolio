@@ -14,7 +14,7 @@ export default function TaskList({ filteredItems, dark, handleChangeChbk, handle
               item={item}
               index={index}
               dark={dark}
-              handleChangeChbk={handleChangeChbk}
+              handleChangeChbk={() => handleChangeChbk(item.id)}
               handleEditItem={handleEditItem}
               handleDeleteItem={handleDeleteItem}
             />

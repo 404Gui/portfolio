@@ -83,17 +83,23 @@ export default function Board() {
 
   const handleAddItem = () => {
     if (inputValue.trim()) {
-      const newItem = { text: inputValue, checked: false };
+      const newItem = {
+        id: Date.now() + Math.random(),
+        text: inputValue,
+        checked: false,
+      };
       setItems([...items, newItem]);
-      setInputValue('');
+      setInputValue("");
     }
   };
 
-  const handleChangeChbk = (index) => {
-    const updatedItems = [...items];
-    updatedItems[index].checked = !updatedItems[index].checked;
+  const handleChangeChbk = (id) => {
+    const updatedItems = items.map(item =>
+      item.id === id ? { ...item, checked: !item.checked } : item
+    );
     setItems(updatedItems);
   };
+  
   
 
   const handleDeleteItem = (index) => {
