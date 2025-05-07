@@ -1,0 +1,38 @@
+{
+  "about": {
+    "title": "About Me",
+    "p1": "👋 <strong>My name is Guilherme Pappi</strong>, and I'm a systems developer passionate about technology, innovation, and building applications.",
+    "p2": "I'm a strong supporter of open source culture and am always learning and evolving, staying up to date with new trends to deliver better and better results. I believe in the power of knowledge as a driver of both social and personal change.",
+    "p3": "I bring 2 years of hands-on experience with some of the best technologies on the market, always focused on <span>turning ideas and problems into great, modern solutions</span>.",
+    "p4": "This portfolio showcases some of my projects, ideas, and what I’ve been building. If you'd like to chat about projects, ideas, or need a hand with something, count on me!",
+    "p5": "<strong>By the way, take a look at my projects just below!</strong>"
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects"
+  },
+  "card": {
+    "carrerInfo": "Full-stack | Mid-level",
+    "info1": "2024 - Present (Front-end developer at 2Clix)",
+    "info2": "IT Management",
+    "info3": "guilhermepappi@gmail.com",
+    "info4": "São Paulo"
+  },
+  "carro": {
+    "toast": "Project still in development!",
+    "code": "Check out the code on GitHub."
+  },
+  "main": {
+    "info1": "Hello,",
+    "info2": "I'm <span>Guilherme</span>,",
+    "info3": "Full-stack Developer",
+    "info4": "I enjoy programming, solving problems, and turning ideas into code. With a good cup of coffee and solid documentation, I turn your problem into a solution.",
+    "info5": "If you liked my work, need something, or are interested in what I do, feel free to reach out —",
+    "talk": "Let's talk"
+  },
+  "projects": {
+    "title": "Section dedicated to my projects (completed and upcoming)",
+    "description": "Check out some of the projects I've developed, featuring simple and practical solutions for everyday needs. In some of them, I used Next.js API Routes. Just click to try out the project and see how it works in practice — or, if you prefer, take a look at the code on GitHub!"
+  }
+}

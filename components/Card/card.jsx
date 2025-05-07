@@ -1,6 +1,7 @@
 import styles from "./styles.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faGraduationCap, faEnvelope, faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { useTranslations } from "next-intl";
 
 export default function Card() {
     const skillsIcons = {
@@ -14,16 +15,19 @@ export default function Card() {
     };
     const skills = Object.keys(skillsIcons);
 
+      const t = useTranslations("card");
+    
+
     return (
         <section className={styles.card}>
             <img src="/eu_foto.jpg" alt="Profile" className={styles.profileImage} />
             <h2 className={styles.cardNome}>Guilherme</h2>
-            <p className={styles.carrer}>Full-stack | Pleno</p>
+            <p className={styles.carrer}>{t("carrerInfo")}</p>
             <ul className={styles.infoList}>
-                <li><FontAwesomeIcon icon={faBriefcase} /> 2024 - Atual (Dev. Front-end na 2Clix)</li>
-                <li><FontAwesomeIcon icon={faGraduationCap} /> Gestão da Tecnologia da Informação</li>
-                <li><FontAwesomeIcon icon={faEnvelope} /> guilhermepappi@gmail.com</li>
-                <li><FontAwesomeIcon icon={faLocationDot} /> São Paulo</li>
+                <li><FontAwesomeIcon icon={faBriefcase} />{t("info1")}</li>
+                <li><FontAwesomeIcon icon={faGraduationCap} /> {t("info2")}</li>
+                <li><FontAwesomeIcon icon={faEnvelope} /> {t("info3")}</li>
+                <li><FontAwesomeIcon icon={faLocationDot} />{t("info4")}</li>
             </ul>
             <div className={styles.skillsContainer}>
                 <div className={styles.skillsWrapper}>

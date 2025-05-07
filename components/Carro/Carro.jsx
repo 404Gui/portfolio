@@ -5,14 +5,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./styles.module.css";
 import Image from "next/image";
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useTranslations } from "next-intl";
 
 const MyCarousel = () => {
   const [dragStartX, setDragStartX] = useState(0);
   const [dragging, setDragging] = useState(false);
+
+  const t = useTranslations("carro");
 
   const settings = {
     dots: true,
@@ -82,7 +84,7 @@ const MyCarousel = () => {
   };
 
   const handleMouseUp = (e, slide) => {
-    if(e.button !== 0) return;
+    if (e.button !== 0) return;
 
     const dragDistance = Math.abs(e.clientX - dragStartX);
 
@@ -90,7 +92,7 @@ const MyCarousel = () => {
       if (slide.url !== "") {
         window.location.href = slide.url;
       } else {
-        toast.warning("Projeto em andamento!");
+        toast.warning(t("toast"));
       }
     }
   };
@@ -119,22 +121,20 @@ const MyCarousel = () => {
             </div>
             <p className={styles.role}>{slide.role}</p>
             {slide.githubUrl && (
-              <a 
-              href={slide.githubUrl} 
-              className={styles.githubLink} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              onMouseDown={(e) => e.stopPropagation()} 
-              onMouseUp={(e) => e.stopPropagation()}
-            >
-              [ Conferir código <FontAwesomeIcon icon={faGithub} size="lg"/>]
-            </a>
-            
+              <a
+                href={slide.githubUrl}
+                className={styles.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseDown={(e) => e.stopPropagation()}
+                onMouseUp={(e) => e.stopPropagation()}
+              >
+                [ {t("code")} <FontAwesomeIcon icon={faGithub} size="lg" />]
+              </a>
             )}
           </div>
         ))}
       </Slider>
-      <ToastContainer />
     </div>
   );
 };
