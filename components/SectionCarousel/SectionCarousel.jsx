@@ -1,10 +1,13 @@
-'use client';
-import React from 'react';
-import MyCarousel from '../Carro/Carro';
-import { motion } from 'framer-motion';
-import styles from './styles.module.css';
+"use client";
+import React from "react";
+import MyCarousel from "../Carro/Carro";
+import { motion } from "framer-motion";
+import styles from "./styles.module.css";
+import { useTranslations } from "next-intl";
 
 const SectionCarousel = () => {
+  const t = useTranslations("projects");
+
   return (
     <div className={styles.sectionContainer}>
       <motion.div
@@ -12,7 +15,7 @@ const SectionCarousel = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ amount: 0.2 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <motion.div
           className={styles.textSection}
@@ -21,8 +24,8 @@ const SectionCarousel = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
           viewport={{ amount: 0.2 }}
         >
-          <h1>Seção dedicada aos meus projetos (concluidos e futuros)</h1>
-          <p>Conheça alguns dos projetos desenvolvidos por mim, que abordam soluções simples e práticas para o dia a dia. Em alguns deles, utilizei API Routes do Next.js. É só clicar e testar o projeto para ver como funciona na prática ou, se preferir, conferir o código no GitHub!</p>
+          <h1>{t("title")}</h1>
+          <p>{t("description")}</p>
         </motion.div>
 
         <motion.div
@@ -33,7 +36,6 @@ const SectionCarousel = () => {
           viewport={{ amount: 0.2 }}
         >
           <MyCarousel />
-          
         </motion.div>
       </motion.div>
     </div>

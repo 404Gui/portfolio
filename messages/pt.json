@@ -1,0 +1,38 @@
+{
+  "about": {
+    "title": "Sobre mim",
+    "p1": "👋 <strong>Me chamo Guilherme Pappi</strong>, sou desenvolvedor de sistemas, apaixonado por tecnologia, inovação e criação de aplicações.",
+    "p2": "Sou um grande apoiador da cultura do open source e estou sempre aprendendo e evoluindo, de olho nas novas tendências para entregar resultados cada vez melhores. Acredito no potencial do conhecimento como agente de mudança social e pessoal.",
+    "p3": "Trago 2 anos de experiência prática com as melhores tecnologias do mercado, sempre focado em <span>transformar ideias e problemas em ótimas e modernas soluções</span>.",
+    "p4": "Neste portfólio mostro um pouco dos meus projetos, minhas ideias e do que desenvolvo. Se quiser conversar sobre projetos, ideias ou precisar de alguma ajuda, pode contar comigo!",
+    "p5": "<strong>Aproveite e dê uma olhada nos meus projetos logo abaixo!</strong>"
+  },
+  "header": {
+    "home": "Home",
+    "about": "Sobre",
+    "projects": "Projetos"
+  },
+  "card": {
+    "carrerInfo": "Full-stack | Pleno",
+    "info1": "2024 - Atual (Dev. Front-end na 2Clix)",
+    "info2": "Gestão da Tecnologia da Informação",
+    "info3": "guilhermepappi@gmail.com",
+    "info4": "São Paulo"
+  },
+  "carro": {
+    "toast": "Projeto ainda em desenvolvimento!",
+    "code": "Código no GitHub"
+  },
+  "main": {
+    "info1": "Olá,",
+    "info2": "Sou <span>Guilherme</span>,",
+    "info3": "Desenvolvedor Full-stack",
+    "info4": "Gosto de programar, resolver problemas e transformar ideias em código. Com uma boa xícara de café e uma boa documentação, transformo seu problema em solução.",
+    "info5": "Se gostou do meu trabalho, precisar de algo ou se interessou pelo que faço, me chama —",
+    "talk": "Vamos conversar"
+  },
+  "projects": {
+    "title": "Seção dedicada aos meus projetos (concluídos e futuros)",
+    "description": "Conheça alguns dos projetos desenvolvidos por mim, que abordam soluções simples e práticas para o dia a dia. Em alguns deles, utilizei API Routes do Next.js. É só clicar e testar o projeto para ver como funciona na prática ou, se preferir, conferir o código no GitHub!"
+  }
+}

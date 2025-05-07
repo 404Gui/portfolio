@@ -7,8 +7,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function About() {
+  const t = useTranslations("about");
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -39,31 +42,30 @@ export default function About() {
         </motion.div>
 
         <motion.div className={styles.content} variants={itemVariants}>
-          <h1 className={styles.title}>Sobre mim</h1>
-          <p className={styles.code}>&lt;p&gt;</p>
+          <h1 className={styles.title}>{t("title")}</h1>
           <p className={styles.texto}>
-            👋 <strong>Me chamo Guilherme Pappi</strong>, sou desenvolvedor de
-            sistemas, apaixonado por tecnologia, inovação e criação de
-            aplicações.
+            {t.rich("p1", {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
           </p>
+
+          <p className={styles.texto}>{t("p2")}</p>
+
           <p className={styles.texto}>
-            Sou um grande apoiador da cultura do open source e estou sempre aprendendo e evoluindo, de olho nas novas tendências para entregar resultados cada vez melhores e acredito no potencial do conhecimento como agente de mudança social e pessoal.
+            {t.rich("p3", {
+              span: (chunks) => (
+                <span className={styles.destaque}>{chunks}</span>
+              ),
+            })}
           </p>
+
+          <p className={styles.texto}>{t("p4")}</p>
+
           <p className={styles.texto}>
-            Trago 2 anos de experiência prática com as melhores tecnologias do
-            mercado, sempre focado em{" "}
-            <span className={styles.destaque}>
-              transformar ideias e problemas em ótimas e modernas soluções
-            </span>
-            .
+            {t.rich("p5", {
+              strong: (chunks) => <strong>{chunks}</strong>,
+            })}
           </p>
-          <p className={styles.texto}>
-          Neste portfólio mostro um pouco dos meus projetos, minhas ideias e do que desenvolvo. Se quiser conversar sobre projetos, ideias ou precisar de alguma ajuda, pode contar comigo!
-          </p>
-          <p className={styles.texto}>
-            👀 <strong>Aproveite e dê uma olhada nos meus projetos logo abaixo!</strong>
-          </p>
-          <p className={styles.code}>&lt;/p&gt;</p>
         </motion.div>
       </div>
     </motion.div>

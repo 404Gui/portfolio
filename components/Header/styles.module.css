@@ -1,7 +1,8 @@
 .header {
-    display: flex ;
-    justify-content: space-around;
-    align-items: center;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
     height: 70px;
     position: fixed;
     top: 0;
@@ -13,33 +14,32 @@
     transition: background 0.3s ease;
 }
 
-
 .logoWrapper {
-    /* display: flex;  
-    justify-content: space-around;
+    display: flex;
     align-items: center;
-    margin: 1.5rem; */
-    cursor: pointer;      
+    cursor: pointer;
 }
 
 .techs {
     display: inline-block;
-    width: 40px;
-    margin-right: 18px;
+    margin-right: 12px;
     text-align: center;
-    white-space: nowrap;
     font-weight: bold;
     color: #12F7D6;
     font-size: 20px;
+    white-space: nowrap;
 }
 
 .name {
     color: #12F7D6;
-    display: inline-block;
-    width: 100px;
-    text-align: center;
-    white-space: nowrap;
     font-size: 20px;
+    white-space: nowrap;
+}
+
+.navbar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .navmenu {
@@ -52,99 +52,120 @@
     font-size: 20px;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 400;
+    color: white;
 }
 
-
-.navlinks:hover, .socialLinks:hover {
+.navlinks:hover {
     color: #12F7D6;
     cursor: pointer;
 }
 
-.languages {
+.actions {
     display: flex;
+    align-items: center;
     gap: 20px;
-    width: 0;
 }
 
-.flags{
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    border: none;
-    box-shadow: 0px 0px 5px rgba(0, 255, 170, 0.3);
-    /* box-shadow: 0px 0px 5px rgba(0, 255, 170, 0.3); */
-    object-fit: cover;
+.socialnav {
+    margin-right: 1rem;
 }
-
 
 .socialMenu {
     display: flex;
-    gap: 20px;
+    gap: 16px;
 }
 
 .socialMenu li {
-    display: flex;
-    align-items: center;
     list-style: none;
-    font-size: 14px;
-    gap: 5px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 400;
 }
 
 .socialLinks a {
     display: flex;
     align-items: center;
-    gap: 4px;    
 }
 
 .socialIcons {
     color: #12F7D6;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease;
 }
 
-.divider {
-    border: none; 
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    margin: 0 2rem; 
-    height: 1px;
-  }
+.socialIcons:hover {
+    transform: scale(1.1);
+}
 
+.languages, .languages a {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
 
+.flags {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 255, 170, 0.3);
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
 
-  @media (max-width: 768px) {
-    .socialLinks span{
-      display: none;
-    }
-  
-    .aside {
-      display: flex;
-      justify-content: center;
-    }
-
+.flags:hover {
+    transform: scale(1.1);
+}
+@media (min-width: 300px) and (max-width: 900px) {
+    
     .logoWrapper {
         display: none;
     }
+}
 
+@media (max-width: 768px) {
     .header {
-        justify-content: space-around;
-
+        flex-wrap: wrap;
+        padding: 0 1rem;
+        gap: 2rem;
     }
 
-    .logo {
+
+    .navbar {
+        width: 100%;
         justify-content: center;
-        gap: 32px;
     }
-  }
 
-  @media (max-width: 483px) {
+    .navmenu {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 483px) {
+    .header {
+        gap: 10px;
+    }
+
     .navlinks {
-      font-size: 12px;
+        font-size: 15px;
+    }
+
+    .navmenu {
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     .socialIcons {
-        width: 17px;
-        height: 17px;
+        width: 15px;
+        height: 20px;
+    }
+
+    .techs,
+    .name {
+        font-size: 16px;
+    }
+
+    .flags {
+        width: 18px;
+        height: 18px;
     }
 }
