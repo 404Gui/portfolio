@@ -1,171 +1,172 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    height: 70px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(10, 31, 28, 0.7);
-    backdrop-filter: blur(10px);
-    z-index: 2;
-    transition: background 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 3rem 1rem 2rem;
+  border-bottom: 1px solid #0b3c4c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(10, 31, 28, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 2;
+  transition: background 0.3s ease;
+  background-color: var(--preto);
+  height: 80px;
 }
 
 .logoWrapper {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .techs {
-    display: inline-block;
-    margin-right: 12px;
-    text-align: center;
-    font-weight: bold;
-    color: #12F7D6;
-    font-size: 20px;
-    white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  color: #12F7D6;
+  font-size: 20px;
+  white-space: nowrap;
 }
 
 .name {
-    color: #12F7D6;
-    font-size: 20px;
-    white-space: nowrap;
+  color: #12F7D6;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
 }
 
 .navbar {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .navmenu {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.navlinks {
-    list-style: none;
-    font-size: 20px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 400;
-    color: white;
+.navlinks a {
+  color: var(--branco);
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .navlinks:hover {
-    color: #12F7D6;
-    cursor: pointer;
+  color: #12F7D6;
+  cursor: pointer;
 }
 
 .actions {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
 }
 
 .socialnav {
-    margin-right: 1rem;
+  display: flex;
 }
 
 .socialMenu {
-    display: flex;
-    gap: 16px;
-}
-
-.socialMenu li {
-    list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .socialLinks a {
-    display: flex;
-    align-items: center;
+  color: #66FCF1;
+  font-size: 1.2rem;
 }
 
 .socialIcons {
-    color: #12F7D6;
-    width: 20px;
-    height: 20px;
-    transition: transform 0.2s ease;
+  width: 25px;
+  height: 25px;
+  color: #66FCF1;
+  transition: transform 0.2s ease;
 }
 
 .socialIcons:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.languages, .languages a {
-    display: flex;
-    gap: 16px;
-    align-items: center;
+.languages {
+  display: flex;
+  gap: 1rem;
 }
 
 .flags {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px rgba(0, 255, 170, 0.3);
-    object-fit: cover;
-    cursor: pointer;
-    transition: transform 0.2s ease;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0, 255, 170, 0.3);
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
 .flags:hover {
-    transform: scale(1.1);
-}
-@media (min-width: 300px) and (max-width: 900px) {
-    
-    .logoWrapper {
-        display: none;
-    }
+  transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-    .header {
-        flex-wrap: wrap;
-        padding: 0 1rem;
-        gap: 2rem;
-    }
-
-
-    .navbar {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .navmenu {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
+@media (max-width: 900px) {
+  .logoWrapper {
+    display: none;
+  }
 }
 
-@media (max-width: 483px) {
-    .header {
-        gap: 10px;
-    }
+@media (max-width: 680px) {
+  .header {
+    flex-direction: column;
+    padding: 0.8rem 1rem;
+    gap: 0.8rem;
+    height: auto;
+  }
 
-    .navlinks {
-        font-size: 15px;
-    }
+  .navmenu {
+    align-items: center;
+    margin-top: 0.2rem;
+  }
 
-    .navmenu {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
+  .actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.8rem;
+  }
 
-    .socialIcons {
-        width: 15px;
-        height: 20px;
-    }
+}
 
-    .techs,
-    .name {
-        font-size: 16px;
-    }
+@media (max-width: 468px) {
+  .title {
+    text-align: center;
+    margin-left: 0;
+  }
 
-    .flags {
-        width: 18px;
-        height: 18px;
-    }
+  .navlinks a {
+    font-size: 17px;
+  }
+
+  .socialIcons {
+    width: 18px;
+    height: 18px;
+  }
+
+  .flags {
+    width: 18px;
+    height: 18px;
+  }
 }

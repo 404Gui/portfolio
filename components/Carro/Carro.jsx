@@ -39,7 +39,7 @@ const MyCarousel = () => {
     {
       id: 1,
       name: "Weather Forecast",
-      role: "Esse projeto integra a API da OpenWeather para fornecer previsões do tempo em tempo real para qualquer localidade!",
+      role: t("p1"),
       logoUrl: "/nubank-logo.png",
       avatarUrl: "/avatar2.png",
       backgroundUrl: "/weather-background.png",
@@ -49,7 +49,7 @@ const MyCarousel = () => {
     {
       id: 2,
       name: "To-do List",
-      role: "Uma lista de tarefas simples, mas altamente útil, para ajudar você a se organizar e não esquecer de nada importante!",
+      role: t("p2"),
       logoUrl: "/stack-overflow-logo.png",
       avatarUrl: "/todolist",
       backgroundUrl: "/todolist-background.png",
@@ -58,8 +58,8 @@ const MyCarousel = () => {
     },
     {
       id: 3,
-      name: "Projeto futuro",
-      role: "Projeto ainda em desenvolvimento...",
+      name: t('pName'),
+      role: t('p3'),
       logoUrl: "/luizalabs-logo.png",
       avatarUrl: "/avatar3.png",
       backgroundUrl: "/lorem.png",
@@ -68,8 +68,8 @@ const MyCarousel = () => {
     },
     {
       id: 4,
-      name: "Projeto futuro",
-      role: "Projeto ainda em desenvolvimento...",
+      name: t('pName'),
+      role: t('p3'),
       logoUrl: "/google-logo.png",
       avatarUrl: "/avatar4.png",
       backgroundUrl: "/lorem.png",

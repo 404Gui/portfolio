@@ -21,7 +21,12 @@
   },
   "carro": {
     "toast": "Projeto ainda em desenvolvimento!",
-    "code": "Código no GitHub"
+    "code": "Código no GitHub",
+    "p1": "Esse projeto integra a API da OpenWeather para fornecer previsões do tempo em tempo real para qualquer localidade!",
+    "p2": "Uma lista de tarefas simples, mas altamente útil, para ajudar você a se organizar e não esquecer de nada importante!",
+    "pName": "Projeto futro",
+    "p3": "Projeto em desenvolvimento"
+
   },
   "main": {
     "info1": "Olá,",

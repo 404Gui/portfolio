@@ -30,9 +30,19 @@
         flex-direction: column;
     }
 
-    .aside {
+    .mainContent {
+        margin-top: 2.5rem;
+    }
+
+    .introduction, .aside {
         display: flex;
         justify-content: center;
+    }
+
+    .codeTwo {
+        width: unset !important;
+        margin-top: 8rem;
+        gap: 1rem;
     }
 }
 

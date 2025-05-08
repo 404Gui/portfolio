@@ -17,7 +17,7 @@ export default function Main() {
           <Card />
         </aside>
         <main className={styles.mainContent}>
-          <div>
+          <div className={styles.introduction} >
             <p className={styles.code}>&lt;h2&gt;</p> <br />
             <h2 className={styles.tittleTwo}>
               {t("info1")} <br />
@@ -43,7 +43,6 @@ export default function Main() {
             <p className={styles.code}>&lt;/p&gt;</p> <br />
           </div>
         </main>
-        {/* <aside className={styles.aside}></aside> */}
       </div>
     </div>
   );

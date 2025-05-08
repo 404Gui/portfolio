@@ -57,5 +57,6 @@
 @media (max-width: 468px) {
   .title {
     text-align: center;
+    margin-left: 0;
   }
 }
