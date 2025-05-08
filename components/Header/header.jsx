@@ -114,7 +114,7 @@ export default function Header() {
           </div>
         </div>
       </header>
-      <hr className={styles.divider} />
+      {/* <hr className={styles.divider} /> */}
     </>
   );
 }

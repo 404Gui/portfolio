@@ -1,8 +1,8 @@
 "use client"
 import styles from "../page.module.css";
-import Header from "@/components/Header/header";
+import Header from "@/components/Header/Header";
 import Main from "@/components/Main/page";
-import About from "../../components/About/about";
+import About from "../../components/About/About";
 import Works from "@/components/Works/works";
 import SectionCarousel from "@/components/SectionCarousel/SectionCarousel";
 import { ToastContainer } from "react-toastify";

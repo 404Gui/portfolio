@@ -21,7 +21,11 @@
   },
   "carro": {
     "toast": "Project still in development!",
-    "code": "Check out the code on GitHub."
+    "code": "Check out the code on GitHub.",
+    "p1": "This project integrates the OpenWeather API to provide real-time weather forecasts for any location!",
+    "p2": "A simple yet highly useful to-do list to help you stay organized and not forget anything important!",
+    "pName": "Still developing...",
+    "p3": "Not done yet!"
   },
   "main": {
     "info1": "Hello,",
