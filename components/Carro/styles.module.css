@@ -9,117 +9,141 @@
 }
 
 .card {
-  border: 2px solid #A56CFF;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 1.5rem;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  height: 300px; 
   position: relative;
+  height: 350px;
+  border-radius: 1rem;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(18, 247, 214, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.015);
 }
 
 .backgroundImage {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
   z-index: 0;
-}
-
-/* .card::before {
-  content: "";
   position: absolute;
-  top: 205px;  
-  width: 100%;
-  height: 30%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-} */
-
-.avatar {
-  border-radius: 50%;
-  border: 2px solid #fff;
-  position: relative;
-  z-index: 1;
 }
 
-.descricao {
+.overlay {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent 80%);
+  padding: 1.5rem 1rem;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 6px;
   justify-content: flex-end;
   height: 100%;
-  margin-top: 185px;
 }
 
 .name {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  margin: 7px;
-  position: relative;
-  z-index: 2;
-  text-align: center;
+  color: #12F7D6;
+  margin-bottom: 0.5rem;
 }
 
 .role {
-  font-size: 0.9rem;
-  color: #f0f0f0;
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.slickNext,
-.slickPrev {
-  color: #fff;
-  font-size: 2rem;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
-}
-
-.slickNext {
-  right: -50px;
-}
-
-.slickPrev {
-  left: -50px;
-}
-
-.slick-slide {
-  padding: 0 10px;
-}
-
-
-.role {
-  font-size: 0.9rem;
-  color: #f0f0f0;
-  position: relative;
-  z-index: 2;
-  text-align: justify;
-  margin: 1rem 0;
+  font-size: 1rem;
+  color: #c5c6c7;
+  line-height: 1.4;
 }
 
 .githubLink {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
+  margin-top: 0.5rem;
   color: #66fcf1;
   text-decoration: none;
-  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.githubLink:hover {
+  text-decoration: underline;
+}
+
+.slickPrev,
+.slickNext {
+  font-size: 2rem;
+  color: #12F7D6;
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slickPrev {
+  left: -35px;
+}
+
+.slickNext {
+  right: -35px;
+}
+
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #12F7D6;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border: 2px solid #a56cff;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.backgroundImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hoverInfo {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: 2;
+  text-align: center;
+}
+
+.card:hover .hoverInfo {
+  transform: translateY(0%);
+}
+
+.githubLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.75rem;
+  color: #66fcf1;
+  font-size: 0.9rem;
+  text-decoration: none;
+  gap: 0.5rem;
 }
 
 .githubLink:hover {

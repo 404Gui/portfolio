@@ -11,12 +11,11 @@ import Flag from "react-world-flags";
 import { Link } from "../../src/i18n/navigation";
 import { useTranslations } from "next-intl";
 
-
 export default function Header() {
   const techs = ["TS", "C#", "JS"];
   const [currentTech, setCurrentTech] = useState(techs[0]);
   const [visible, setVisible] = useState(true);
-  
+
   const t = useTranslations("header");
 
   useEffect(() => {
@@ -64,53 +63,60 @@ export default function Header() {
         </nav>
 
         <div className={styles.actions}>
-          <nav className={styles.socialnav}>
-            <ul className={styles.socialMenu}>
-              <li className={styles.socialLinks}>
-                <Link
-                  href="https://www.linkedin.com/in/guilherme-pappi/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon
-                    className={styles.socialIcons}
-                    icon={faLinkedin}
-                  />
-                </Link>
-              </li>
-              <li className={styles.socialLinks}>
-                <Link
-                  href="https://github.com/404Gui"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon
-                    className={styles.socialIcons}
-                    icon={faGithub}
-                  />
-                </Link>
-              </li>
-              <li className={styles.socialLinks}>
-                <Link
-                  href="https://www.instagram.com/404guii"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon
-                    className={styles.socialIcons}
-                    icon={faInstagram}
-                  />
-                </Link>
-              </li>
-            </ul>
-          </nav>
-          <div className={styles.languages}>
-            <Link href="/" locale="pt" >
-              <Flag code="BR" className={styles.flags} />            
-            </Link>
-            <Link href="/" locale="en">
-              <Flag code="US" className={styles.flags} />
-            </Link>
+          <div className={styles.languagesWrapper}>
+            <span className={styles.label}>Idioma</span>
+            <div className={styles.languages}>
+              <Link href="/" locale="pt">
+                <Flag code="BR" className={styles.flags} />
+              </Link>
+              <Link href="/" locale="en">
+                <Flag code="US" className={styles.flags} />
+              </Link>
+            </div>
+          </div>
+
+          <div className={styles.socialWrapper}>
+            <span className={styles.label}>Redes</span>
+            <nav className={styles.socialnav}>
+              <ul className={styles.socialMenu}>
+                <li className={styles.socialLinks}>
+                  <Link
+                    href="https://www.linkedin.com/in/guilherme-pappi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      className={styles.socialIcons}
+                      icon={faLinkedin}
+                    />
+                  </Link>
+                </li>
+                <li className={styles.socialLinks}>
+                  <Link
+                    href="https://github.com/404Gui"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      className={styles.socialIcons}
+                      icon={faGithub}
+                    />
+                  </Link>
+                </li>
+                <li className={styles.socialLinks}>
+                  <Link
+                    href="https://www.instagram.com/404guii"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      className={styles.socialIcons}
+                      icon={faInstagram}
+                    />
+                  </Link>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </header>

@@ -1,6 +1,6 @@
 .sectionContainer {
   max-width: 1300px;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 2rem 1rem;
 }
 
@@ -8,10 +8,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  background-color: #0b0c10;
-  border-radius: 10px;
-  padding: 2rem;
+  gap: 2.5rem;
+  background: linear-gradient(145deg, #0a1f1c 0%, #00090e 100%);
+  border: 1px solid rgba(165, 108, 255, 0.2);
+  box-shadow: 0 0 20px rgba(18, 247, 214, 0.1);
+  border-radius: 18px;
+  padding: 2.5rem;
+  backdrop-filter: blur(8px);
+  transition: all 0.4s ease-in-out;
+}
+
+.sectionWrapper:hover {
+  box-shadow: 0 0 30px rgba(165, 108, 255, 0.4);
 }
 
 @media (min-width: 868px) {
@@ -24,9 +32,9 @@
 .textSection {
   width: 100%;
   flex: 1;
-  color: #66fcf1;
+  color: var(--verde-escuro);
   font-family: 'Ubuntu', sans-serif;
-  text-align: center; /* Centraliza no mobile */
+  text-align: center;
 }
 
 @media (min-width: 868px) {
@@ -36,15 +44,16 @@
 }
 
 .textSection h1 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
   color: #a56cff;
+  transition: transform 0.3s ease;
 }
 
 .textSection p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #c5c6c7;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #98FAEC;
 }
 
 .carouselSection {
@@ -57,82 +66,4 @@
   .carouselSection {
     max-width: 60%;
   }
-}
-
-.carouselContainer {
-  width: 100%;
-}
-
-.slide {
-  padding: 1rem;
-}
-
-.card {
-  border: 2px solid #a56cff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 1.5rem;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  height: 300px;
-  position: relative;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.card::before {
-  content: '';
-  position: absolute;
-  top: 205px;
-  width: 100%;
-  height: 30%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
-
-.avatar {
-  border-radius: 50%;
-  border: 2px solid #fff;
-  position: relative;
-  z-index: 1;
-}
-
-.descricao {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  justify-content: flex-end;
-  height: 100%;
-  margin-top: 185px;
-}
-
-.name {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 7px;
-  position: relative;
-  z-index: 2;
-  text-align: center;
-}
-
-.role {
-  font-size: 0.9rem;
-  color: #f0f0f0;
-  position: relative;
-  z-index: 2;
-}
-
-.slickNext,
-.slickPrev {
-  color: #fff;
-  font-size: 2rem;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
 }

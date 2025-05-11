@@ -37,12 +37,13 @@ export default function Works() {
         variants={itemVariants}
         id="projects"
       >
-        <h1>{t("projects")}</h1> <br />
-        <em>
+        <h1 className={styles.glowTitle}>{t("projects")}</h1>
+        <span className={styles.subline}>
           “A lot of times, people don’t know what they want until you show it to
           them”
-        </em>{" "}
-        <br />— Steve Jobs
+        </span>
+        <span className={styles.quoteAuthor}>— Steve Jobs</span>
+
         <motion.div className={styles.arrowsContainer} variants={itemVariants}>
           <motion.div
             className={styles.arrow}
@@ -55,7 +56,6 @@ export default function Works() {
             <FiChevronDown size={40} />
           </motion.div>
         </motion.div>
-        <br />
       </motion.div>
     </motion.div>
   );

@@ -17,14 +17,46 @@ export default function About() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3,
+        staggerChildren: 0.25,
+        ease: "easeOut",
       },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    hidden: { opacity: 0, y: 40, scale: 0.95, filter: "blur(4px)" },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      filter: "blur(0px)",
+      transition: {
+        duration: 0.7,
+        ease: "easeOut",
+        type: "spring",
+        damping: 20,
+        stiffness: 100,
+      },
+    },
+  };
+
+  const iconVariants = {
+    hidden: { opacity: 0, scale: 0.8, rotate: -15 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      rotate: 0,
+      transition: {
+        duration: 0.6,
+        type: "spring",
+        stiffness: 150,
+      },
+    },
+    whileHover: {
+      scale: 1.2,
+      rotate: 5,
+      transition: { type: "spring", stiffness: 300 },
+    },
   };
 
   return (
@@ -36,9 +68,15 @@ export default function About() {
     >
       <div className={styles.about} id="about">
         <motion.div className={styles.logos} variants={itemVariants}>
-          <FontAwesomeIcon icon={faCode} className={styles.icon} />
-          <FontAwesomeIcon icon={faLaptopCode} className={styles.icon} />
-          <FontAwesomeIcon icon={faProjectDiagram} className={styles.icon} />
+          {[faCode, faLaptopCode, faProjectDiagram].map((icon, idx) => (
+            <motion.div
+              key={idx}
+              variants={iconVariants}
+              className={styles.iconWrapper}
+            >
+              <FontAwesomeIcon icon={icon} className={styles.icon} />
+            </motion.div>
+          ))}
         </motion.div>
 
         <motion.div className={styles.content} variants={itemVariants}>
@@ -48,9 +86,7 @@ export default function About() {
               strong: (chunks) => <strong>{chunks}</strong>,
             })}
           </p>
-
           <p className={styles.texto}>{t("p2")}</p>
-
           <p className={styles.texto}>
             {t.rich("p3", {
               span: (chunks) => (
@@ -58,9 +94,7 @@ export default function About() {
               ),
             })}
           </p>
-
           <p className={styles.texto}>{t("p4")}</p>
-
           <p className={styles.texto}>
             {t.rich("p5", {
               strong: (chunks) => <strong>{chunks}</strong>,

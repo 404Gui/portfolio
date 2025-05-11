@@ -17,19 +17,17 @@ export default function Main() {
           <Card />
         </aside>
         <main className={styles.mainContent}>
-          <div className={styles.introduction} >
-            <p className={styles.code}>&lt;h2&gt;</p> <br />
+          <div className={styles.introduction}>
+            <p className={styles.code}>&lt;h2&gt;</p>
             <h2 className={styles.tittleTwo}>
               {t("info1")} <br />
               {t.rich("info2", {
-                span: (chunks) => (
-                  <span className={styles.nome}>{chunks}</span>
-                ),
+                span: (chunks) => <span className={styles.nome}>{chunks}</span>,
               })}{" "}
               <br />
               {t("info3")}
+              <p className={styles.codeTwo}>&lt;/h2&gt;</p>
             </h2>
-            <p className={styles.codeTwo}>&lt;/h2&gt;</p> <br />
           </div>
           <div>
             <p className={styles.code}>&lt;p&gt;</p> <br />
