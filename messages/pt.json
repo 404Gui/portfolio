@@ -10,7 +10,9 @@
   "header": {
     "home": "Home",
     "about": "Sobre",
-    "projects": "Projetos"
+    "projects": "Projetos",
+    "idioma": "Idiomas",
+    "rede": "Redes"
   },
   "card": {
     "carrerInfo": "Full-stack | Pleno",

@@ -64,7 +64,7 @@ export default function Header() {
 
         <div className={styles.actions}>
           <div className={styles.languagesWrapper}>
-            <span className={styles.label}>Idioma</span>
+            <span className={styles.label}>{t('idioma')}</span>
             <div className={styles.languages}>
               <Link href="/" locale="pt">
                 <Flag code="BR" className={styles.flags} />
@@ -76,7 +76,7 @@ export default function Header() {
           </div>
 
           <div className={styles.socialWrapper}>
-            <span className={styles.label}>Redes</span>
+            <span className={styles.label}>{t('rede')}</span>
             <nav className={styles.socialnav}>
               <ul className={styles.socialMenu}>
                 <li className={styles.socialLinks}>
