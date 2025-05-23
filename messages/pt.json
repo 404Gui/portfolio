@@ -27,7 +27,7 @@
     "p1": "Esse projeto integra a API da OpenWeather para fornecer previsões do tempo em tempo real para qualquer localidade!",
     "p2": "Uma lista de tarefas simples, mas altamente útil, para ajudar você a se organizar e não esquecer de nada importante!",
     "pName": "Projeto futro",
-    "p3": "Projeto em desenvolvimento"
+    "p3": "Uma aplicação full stack desenvolvida para ajudar usuários a organizarem suas tarefas de forma intuitiva, eficiente e moderna. O sistema conta com autenticação segura, gerenciamento completo de tarefas e uma interface fluida com suporte a drag and drop."
 
   },
   "main": {

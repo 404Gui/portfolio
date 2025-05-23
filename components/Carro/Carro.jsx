@@ -49,10 +49,10 @@ const MyCarousel = () => {
     },
     {
       id: 3,
-      name: t("pName"),
+      name: "Taskoom",
       role: t("p3"),
-      backgroundUrl: "/lorem.png",
-      url: "",
+      backgroundUrl: "/taskoom-background.png",
+      url: "https://taskoom.com/",
       githubUrl: "",
     },
   ];
