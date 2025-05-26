@@ -1,0 +1,98 @@
+.footer {
+  background: linear-gradient(180deg, #0a1f1c 0%, #00090e 100%);
+  color: #94a3b8;
+  padding: 4rem 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* maior espaçamento entre blocos */
+}
+
+.topRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  text-align: left;
+}
+
+.section {
+  flex: 1 1 300px;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #67e8f9;
+  margin-bottom: 1rem;
+}
+
+.pitch {
+  font-size: 1rem;
+  color: #cbd5e1;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.socialIcons {
+  font-size: 2rem;
+  color: #67e8f9;
+  transition: color 0.3s ease;
+}
+
+.socialIcons:hover {
+  color: #38bdf8;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: radial-gradient(
+    circle,
+    rgba(103, 232, 249, 0.8) 0%,
+    rgba(103, 232, 249, 0.3) 40%,
+    transparent 80%
+  );
+  border: none;
+  margin: 2rem 0;
+  opacity: 0.8;
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.copy {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.toTopButton {
+  background: transparent;
+  border: none;
+  color: #67e8f9;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.toTopButton:hover {
+  color: #38bdf8;
+}
