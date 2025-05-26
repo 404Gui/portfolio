@@ -33,6 +33,14 @@ const MyCarousel = () => {
   const slides = [
     {
       id: 1,
+      name: "Taskoom",
+      role: t("p3"),
+      backgroundUrl: "/taskoom-background.png",
+      url: "https://taskoom.com/",
+      githubUrl: "",
+    },
+    {
+      id: 2,
       name: "Weather Forecast",
       role: t("p1"),
       backgroundUrl: "/weather-background.png",
@@ -40,21 +48,14 @@ const MyCarousel = () => {
       githubUrl: "https://github.com/404Gui/weather-app",
     },
     {
-      id: 2,
+      id: 3,
       name: "To-do List",
       role: t("p2"),
       backgroundUrl: "/todolist-background.png",
       url: "/todolist",
       githubUrl: "https://github.com/404Gui/todolist",
     },
-    {
-      id: 3,
-      name: "Taskoom",
-      role: t("p3"),
-      backgroundUrl: "/taskoom-background.png",
-      url: "https://taskoom.com/",
-      githubUrl: "",
-    },
+    
   ];
 
   const handleMouseDown = (e) => {
