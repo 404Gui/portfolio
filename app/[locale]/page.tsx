@@ -6,6 +6,7 @@ import About from "../../components/About/about";
 import Works from "../../components/Works/works";
 import SectionCarousel from "../../components/SectionCarousel/SectionCarousel";
 import { ToastContainer } from "react-toastify";
+import Footer from "../../components/Footer/footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <About />
       <Works />
       <SectionCarousel />
+      <Footer />
 
       <ToastContainer
         position="top-right"

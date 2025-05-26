@@ -31,7 +31,7 @@ export default function About() {
       scale: 1,
       filter: "blur(0px)",
       transition: {
-        duration: 0.7,
+        duration: 0.3,
         ease: "easeOut",
         type: "spring",
         damping: 20,
@@ -47,7 +47,7 @@ export default function About() {
       scale: 1,
       rotate: 0,
       transition: {
-        duration: 0.6,
+        duration: 0.3,
         type: "spring",
         stiffness: 150,
       },

@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import {
   faLinkedin,
-  faInstagram,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -103,24 +102,11 @@ export default function Header() {
                     />
                   </Link>
                 </li>
-                <li className={styles.socialLinks}>
-                  <Link
-                    href="https://www.instagram.com/404guii"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      className={styles.socialIcons}
-                      icon={faInstagram}
-                    />
-                  </Link>
-                </li>
               </ul>
             </nav>
           </div>
         </div>
       </header>
-      {/* <hr className={styles.divider} /> */}
     </>
   );
 }
