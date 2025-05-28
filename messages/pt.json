@@ -28,7 +28,6 @@
     "p2": "Uma lista de tarefas simples, mas altamente útil, para ajudar você a se organizar e não esquecer de nada importante!",
     "pName": "Projeto futro",
     "p3": "Uma aplicação full stack desenvolvida para ajudar usuários a organizarem suas tarefas de forma intuitiva, eficiente e moderna. O sistema conta com autenticação segura, gerenciamento completo de tarefas e uma interface fluida com suporte a drag and drop."
-
   },
   "main": {
     "info1": "Olá,",
@@ -41,5 +40,12 @@
   "projects": {
     "title": "Seção dedicada aos meus projetos (concluídos e futuros)",
     "description": "Conheça alguns dos projetos desenvolvidos por mim, que abordam soluções simples e práticas para o dia a dia. Em alguns deles, utilizei API Routes do Next.js. É só clicar e testar o projeto para ver como funciona na prática ou, se preferir, conferir o código no GitHub!"
+  },
+  "footer": {
+    "aboutTitle": "Sobre",
+    "aboutText": "Desenvolvo soluções web modernas, performáticas e sob medida para transformar ideias em experiências digitais incríveis.",
+    "connectTitle": "Conecte-se",
+    "copyright": "© 2025 Guilherme Pappi. Todos os direitos reservados.",
+    "toTop": "Voltar ao topo"
   }
 }

@@ -40,5 +40,13 @@
   "projects": {
     "title": "Section dedicated to my projects (completed and upcoming)",
     "description": "Check out some of the projects I've developed, featuring simple and practical solutions for everyday needs. In some of them, I used Next.js API Routes. Just click to try out the project and see how it works in practice — or, if you prefer, take a look at the code on GitHub!"
-  }
+  },
+  "footer": {
+  "aboutTitle": "About",
+  "aboutText": "I develop modern, high-performance, and tailor-made web solutions to transform ideas into amazing digital experiences.",
+  "connectTitle": "Contact",
+  "copyright": "© 2025 Guilherme Pappi. All rights reserved.",
+  "toTop": "Back to top"
+}
+
 }
