@@ -1,46 +1,19 @@
-"use client";
-import React from "react";
-import MyCarousel from "../Carro/Carro";
-import { motion } from "framer-motion";
 import styles from "./styles.module.css";
-import { useTranslations } from "next-intl";
+import { MyCarousel } from "../Carro/Carro";
 
-const fadeInUp = {
-  hidden: { opacity: 0, y: 80 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: "easeOut" } },
-};
-
-export function SectionCarousel() {
-  const t = useTranslations("projects");
-
+export function SectionCarousel({ t }) {
   return (
-    <motion.section
-      className={styles.sectionContainer}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.3 }}
-    >
-      <motion.div className={styles.sectionWrapper} variants={fadeInUp}>
-        <motion.div
-          className={styles.textSection}
-          variants={fadeInUp}
-          transition={{ delay: 0.1 }}
-        >
-          <motion.h1 whileHover={{ scale: 1.05 }}>
-            {t("title")}
-          </motion.h1>
-          <motion.p transition={{ delay: 0.2 }}>{t("description")}</motion.p>
-        </motion.div>
+    <section className={styles.sectionContainer}>
+      <div className={styles.sectionWrapper}>
+        <div className={styles.textSection}>
+          <h1>{t("title")}</h1>
+          <p>{t("description")}</p>
+        </div>
 
-        <motion.div
-          className={styles.carouselSection}
-          variants={fadeInUp}
-          transition={{ delay: 0.3 }}
-        >
+        <div className={styles.carouselSection}>
           <MyCarousel />
-        </motion.div>
-      </motion.div>
-    </motion.section>
+        </div>
+      </div>
+    </section>
   );
-};
-
+}

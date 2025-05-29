@@ -1,14 +1,11 @@
 import styles from "./styles.module.css";
 
 import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
-import Card from "../Card/card";
-import Titulo from "../Titulo/titulo";
+import { Card } from "../Card/card";
+import { Titulo } from "../Titulo/titulo";
 import { FaWhatsapp } from "react-icons/fa";
-import { useTranslations } from "next-intl";
 
-export function Main() {
-  const t = useTranslations("main");
-
+export function Main({ t }) {
   return (
     <div>
       <Titulo />

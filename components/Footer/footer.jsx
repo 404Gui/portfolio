@@ -1,20 +1,10 @@
-"use client";
-import React from "react";
 import Link from "next/link";
 import styles from "./Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { useTranslations } from "next-intl";
 
-export function Footer() {
-  const t = useTranslations("footer");
-
-  const scrollToTop = () => {
-    const homeElement = document.getElementById("home");
-    if (homeElement) {
-      homeElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+export function Footer({ t }) {
+  
 
   return (
     <footer className={styles.footer}>
@@ -56,7 +46,7 @@ export function Footer() {
 
         <div className={styles.bottomRow}>
           <p className={styles.copy}>{t("copyright")}</p>
-          <button onClick={scrollToTop} className={styles.toTopButton}>
+          <button className={styles.toTopButton}>
             {t("toTop")}
           </button>
         </div>
