@@ -10,7 +10,7 @@ import Flag from "react-world-flags";
 import { Link } from "../../src/i18n/navigation";
 import { useTranslations } from "next-intl";
 
-export default function Header() {
+export function Header() {
   const techs = ["TS", "C#", "JS"];
   const [currentTech, setCurrentTech] = useState(techs[0]);
   const [visible, setVisible] = useState(true);

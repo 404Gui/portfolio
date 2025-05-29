@@ -6,10 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useTranslations } from "next-intl";
 
-
-const Footer = () => {
+export function Footer() {
   const t = useTranslations("footer");
-  
+
   const scrollToTop = () => {
     const homeElement = document.getElementById("home");
     if (homeElement) {
@@ -64,6 +63,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

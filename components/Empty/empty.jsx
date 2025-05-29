@@ -1,6 +1,6 @@
 import styles from "./styles.module.css"
 
-export default function Vazio() {
+export function Vazio() {
     return (
       <div className={styles.vazioContainer}>
         <img src="/empty.png" alt="Vazio" className={styles.imgVazio} />

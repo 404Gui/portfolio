@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
-export default function About() {
+export function About() {
   const t = useTranslations("about");
 
   const containerVariants = {

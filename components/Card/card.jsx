@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faGraduationCap, faEnvelope, faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { useTranslations } from "next-intl";
 
-export default function Card() {
+export function Card() {
     const skillsIcons = {
         TYPESCRIPT: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
         JS: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",

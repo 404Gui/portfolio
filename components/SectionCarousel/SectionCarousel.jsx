@@ -10,7 +10,7 @@ const fadeInUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: "easeOut" } },
 };
 
-const SectionCarousel = () => {
+export function SectionCarousel() {
   const t = useTranslations("projects");
 
   return (
@@ -44,4 +44,3 @@ const SectionCarousel = () => {
   );
 };
 
-export default SectionCarousel;

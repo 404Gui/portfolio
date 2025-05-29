@@ -10,7 +10,7 @@ import styles from "./styles.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const MyCarousel = () => {
+export function MyCarousel() {
   const t = useTranslations("carro");
   const [dragStartX, setDragStartX] = useState(0);
 
@@ -55,7 +55,6 @@ const MyCarousel = () => {
       url: "/todolist",
       githubUrl: "https://github.com/404Gui/todolist",
     },
-    
   ];
 
   const handleMouseDown = (e) => {
@@ -114,9 +113,7 @@ const MyCarousel = () => {
       </Slider>
     </div>
   );
-};
-
-export default MyCarousel;
+}
 
 const NextArrow = ({ onClick }) => (
   <div className={styles.slickNext} onClick={onClick}>

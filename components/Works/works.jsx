@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { FiChevronDown } from "react-icons/fi";
 import { useTranslations } from "next-intl";
 
-export default function Works() {
+export function Works() {
   const t = useTranslations("header");
 
   const containerVariants = {

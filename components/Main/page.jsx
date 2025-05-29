@@ -6,7 +6,7 @@ import Titulo from "../Titulo/titulo";
 import { FaWhatsapp } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 
-export default function Main() {
+export function Main() {
   const t = useTranslations("main");
 
   return (

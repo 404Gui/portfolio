@@ -1,6 +1,6 @@
 import styles from "./styles.module.css"
 
-export default function CardTwo() {
+export function CardTwo() {
 
     return (
 

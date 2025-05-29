@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
-const Carousel = ({ projects }) => {
+export function Carousel ({ projects }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextProject = () => {
@@ -64,4 +64,3 @@ const Carousel = ({ projects }) => {
   );
 };
 
-export default Carousel;
