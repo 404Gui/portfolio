@@ -1,17 +1,19 @@
 import styles from "./styles.module.css";
-import { MyCarousel } from "../Carro/Carro";
+import { ProjectsShowcase } from "../ProjectsShowcase/ProjectsShowcase";
 
 export function SectionCarousel({ t }) {
   return (
     <section className={styles.sectionContainer}>
       <div className={styles.sectionWrapper}>
-        <div className={styles.textSection}>
-          <h1>{t("title")}</h1>
-          <p>{t("description")}</p>
+        <div className={styles.quoteContainer}>
+          <span className={styles.subline}>
+            “A lot of times, people don’t know what they want until you show it to them”
+          </span>
+          <span className={styles.quoteAuthor}>— Steve Jobs</span>
         </div>
 
         <div className={styles.carouselSection}>
-          <MyCarousel />
+          <ProjectsShowcase />
         </div>
       </div>
     </section>
