@@ -30,7 +30,7 @@
     "p3": "Uma aplicação full stack desenvolvida para ajudar usuários a organizarem suas tarefas de forma intuitiva, eficiente e moderna. O sistema conta com autenticação segura, gerenciamento completo de tarefas e uma interface fluida com suporte a drag and drop."
   },
   "main": {
-    "info1": "Olá,",
+    "info1": "Hey,",
     "info2": "Sou <span>Guilherme</span>,",
     "info3": "Desenvolvedor Full-stack",
     "info4": "Gosto de programar, resolver problemas e transformar ideias em código. Com uma boa xícara de café e uma boa documentação, transformo seu problema em solução.",
@@ -38,8 +38,8 @@
     "talk": "Vamos conversar"
   },
   "projects": {
-    "title": "Seção dedicada aos meus projetos (concluídos e futuros)",
-    "description": "Conheça alguns dos projetos desenvolvidos por mim, que abordam soluções simples e práticas para o dia a dia. Em alguns deles, utilizei API Routes do Next.js. É só clicar e testar o projeto para ver como funciona na prática ou, se preferir, conferir o código no GitHub!"
+    "title": "Projetos em destaque",
+    "description": "Uma seleção dos projetos mais recentes que desenvolvi com carinho e dedicação. Teste ou acesse o código no GitHub!"
   },
   "footer": {
     "aboutTitle": "Sobre",
