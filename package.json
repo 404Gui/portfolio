@@ -19,6 +19,7 @@
     "@mui/material": "^6.1.4",
     "@splidejs/react-splide": "^0.7.12",
     "@svgr/webpack": "^8.1.0",
+    "@tabler/icons-react": "^3.33.0",
     "bootstrap": "^5.3.3",
     "flag-icon-css": "^4.1.7",
     "framer-motion": "^11.11.1",

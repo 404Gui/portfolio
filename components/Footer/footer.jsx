@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
+
 
 export function Footer({ t }) {
   return (
@@ -21,20 +21,15 @@ export function Footer({ t }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon
-                  className={styles.socialIcons}
-                  icon={faGithub}
-                />
+                <IconBrandGithub size={24} /> 
+                
               </Link>
               <Link
                 href="https://www.linkedin.com/in/guilherme-pappi/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon
-                  className={styles.socialIcons}
-                  icon={faLinkedin}
-                />
+                <IconBrandLinkedin size={24} />
               </Link>
             </div>
           </section>
