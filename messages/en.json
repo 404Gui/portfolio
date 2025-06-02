@@ -38,7 +38,7 @@
     "talk": "Let's talk"
   },
   "projects": {
-    "title": "A section dedicated to my projects (completed and upcoming)",
+    "title": "Projects",
     "taskoomDescription": "Taskoom is a modern task management system that provides secure authentication via JWT, efficient organization through lists and tasks, and integration with Hugging Face AI to suggest and optimize list creation.",
     "weatherDescription": "A weather app that shows forecasts based on your location and weather API, featuring smooth animations and up-to-date data.",
     "todolistDescription": "A lightweight and intuitive to-do list for quick task management with local persistence.",

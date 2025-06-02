@@ -105,12 +105,6 @@ export function ProjectsShowcase() {
     <section className={styles.projectsSection}>
       <div className={styles.carousel}>
         <div className={styles.sideWrapper}>
-          <button
-            className={clsx(styles.navButton, styles.prevButton)}
-            onClick={prevProject}
-          >
-            <ChevronLeft size={24} />
-          </button>
           <div className={styles.sideCard}>
             <Image
               src={getProjectAt(-1).image}
@@ -186,14 +180,20 @@ export function ProjectsShowcase() {
               onClick={nextProject}
             />
           </div>
-          <button
-            className={clsx(styles.navButton, styles.nextButton)}
-            onClick={nextProject}
-          >
-            <ChevronRight size={24} />
-          </button>
         </div>
       </div>
+        <button
+          className={clsx(styles.navButton, styles.prevButton)}
+          onClick={prevProject}
+        >
+          <ChevronLeft size={24} />
+        </button>
+        <button
+          className={clsx(styles.navButton, styles.nextButton)}
+          onClick={nextProject}
+        >
+          <ChevronRight size={24} />
+        </button>
 
       <div className={styles.projectStack}>
         <div className={styles.stackIcons}>
