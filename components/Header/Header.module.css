@@ -88,7 +88,6 @@
 .actions {
   display: flex;
   align-items: center;
-  gap: clamp(1.5rem, 4vw, 2.5rem);
   justify-content: center;
 }
 
@@ -98,22 +97,20 @@
 
 .socialMenu {
   display: flex;
-  gap: clamp(0.6rem, 2vw, 1.2rem);
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.socialLinks a {
-  color: #66FCF1;
-  font-size: clamp(1rem, 2.2vw, 1.2rem);
-  transition: transform 0.3s ease, color 0.3s ease;
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
-.socialIcons {
-  width: clamp(18px, 3vw, 25px);
-  height: clamp(18px, 3vw, 25px);
-  color: #66FCF1;
+.socialLinks a {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .socialIcons:hover {
@@ -124,27 +121,6 @@
 .languages {
   display: flex;
   gap: clamp(0.5rem, 2vw, 1rem);
-}
-
-.flags {
-  width: clamp(18px, 3vw, 25px);
-  height: clamp(18px, 3vw, 25px);
-  border-radius: 50%;
-  box-shadow: 0px 0px 5px rgba(0, 255, 170, 0.3);
-  object-fit: cover;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-.flags:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
-}
-
-@keyframes pulseTech {
-  0% { color: #12F7D6; }
-  50% { color: #00FFD1; }
-  100% { color: #12F7D6; }
 }
 
 @media (max-width: 900px) {
@@ -185,4 +161,21 @@
   opacity: 0.7;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+
+@media (max-width: 568px) {
+  .navbar {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobileMenu {
+    display: none;
+  }
 }

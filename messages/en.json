@@ -30,7 +30,7 @@
     "p3": "Not done yet!"
   },
   "main": {
-    "info1": "Hello,",
+    "info1": "Hey,",
     "info2": "I'm <span>Guilherme</span>,",
     "info3": "Full-stack Developer",
     "info4": "I enjoy programming, solving problems, and turning ideas into code. With a good cup of coffee and solid documentation, I turn your problem into a solution.",
@@ -38,15 +38,25 @@
     "talk": "Let's talk"
   },
   "projects": {
-    "title": "Section dedicated to my projects (completed and upcoming)",
-    "description": "Check out some of the projects I've developed, featuring simple and practical solutions for everyday needs. In some of them, I used Next.js API Routes. Just click to try out the project and see how it works in practice — or, if you prefer, take a look at the code on GitHub!"
+    "title": "Projects",
+    "taskoomDescription": "Taskoom is a modern task management system that provides secure authentication via JWT, efficient organization through lists and tasks, and integration with Hugging Face AI to suggest and optimize list creation.",
+    "weatherDescription": "A weather app that shows forecasts based on your location and weather API, featuring smooth animations and up-to-date data.",
+    "todolistDescription": "A lightweight and intuitive to-do list for quick task management with local persistence.",
+    "taskoomRole": "Productivity system",
+    "weatherRole": "Weather forecast app",
+    "todolistRole": "Simple task manager",
+    "verProjeto": "Open project",
+    "verDescricao": "Description",
+    "verCodigo": "Source code"
   },
   "footer": {
-  "aboutTitle": "About",
-  "aboutText": "I develop modern, high-performance, and tailor-made web solutions to transform ideas into amazing digital experiences.",
-  "connectTitle": "Contact",
-  "copyright": "© 2025 Guilherme Pappi. All rights reserved.",
-  "toTop": "Back to top"
-}
-
+    "aboutTitle": "About",
+    "aboutText": "I develop modern, high-performance, and tailor-made web solutions to transform ideas into amazing digital experiences.",
+    "connectTitle": "Contact",
+    "copyright": "© 2025 Guilherme Pappi. All rights reserved.",
+    "toTop": "Back to top"
+  },
+  "works": {
+    "title": "Projetos"
+  }
 }

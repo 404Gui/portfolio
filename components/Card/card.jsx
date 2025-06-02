@@ -2,8 +2,9 @@ import styles from "./styles.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faGraduationCap, faEnvelope, faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
-export default function Card() {
+export function Card() {
     const skillsIcons = {
         TYPESCRIPT: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
         JS: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
@@ -19,23 +20,48 @@ export default function Card() {
     
 
     return (
-        <section className={styles.card}>
-            <img src="/eu_foto.jpg" alt="Profile" className={styles.profileImage} />
-            <h2 className={styles.cardNome}>Guilherme</h2>
-            <p className={styles.carrer}>{t("carrerInfo")}</p>
-            <ul className={styles.infoList}>
-                <li><FontAwesomeIcon icon={faBriefcase} />{t("info1")}</li>
-                <li><FontAwesomeIcon icon={faGraduationCap} /> {t("info2")}</li>
-                <li><FontAwesomeIcon icon={faEnvelope} /> {t("info3")}</li>
-                <li><FontAwesomeIcon icon={faLocationDot} />{t("info4")}</li>
-            </ul>
-            <div className={styles.skillsContainer}>
-                <div className={styles.skillsWrapper}>
-                    {skills.concat(skills).map((skill, index) => (
-                        <img key={index} src={skillsIcons[skill]} alt={skill} className={styles.skillIcon} />
-                    ))}
-                </div>
-            </div>
-        </section>
+      <section className={styles.card}>
+        <div className="flex justify-center">
+          <Image
+            src="/eu-foto2.jpg"
+            alt="Profile"
+            className={styles.profileImage}
+            quality={100} 
+            width={300} 
+            height={300} 
+            priority={"true"}
+          />
+        </div>
+        <h2 className={styles.cardNome}>Guilherme</h2>
+        <p className={styles.carrer}>{t("carrerInfo")}</p>
+        <ul className={styles.infoList}>
+          <li>
+            <FontAwesomeIcon icon={faBriefcase} />
+            {t("info1")}
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faGraduationCap} /> {t("info2")}
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faEnvelope} /> {t("info3")}
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faLocationDot} />
+            {t("info4")}
+          </li>
+        </ul>
+        <div className={styles.skillsContainer}>
+          <div className={styles.skillsWrapper}>
+            {skills.concat(skills).map((skill, index) => (
+              <img
+                key={index}
+                src={skillsIcons[skill]}
+                alt={skill}
+                className={styles.skillIcon}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
     );
 }

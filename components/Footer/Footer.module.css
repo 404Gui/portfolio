@@ -10,7 +10,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 3rem; /* maior espaçamento entre blocos */
+  gap: 3rem;
 }
 
 .topRow {
@@ -71,11 +71,7 @@
 }
 
 .bottomRow {
-  display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem;
   text-align: center;
 }
 
@@ -84,7 +80,7 @@
   color: #64748b;
 }
 
-.toTopButton {
+/* .toTopButton {
   background: transparent;
   border: none;
   color: #67e8f9;
@@ -95,4 +91,4 @@
 
 .toTopButton:hover {
   color: #38bdf8;
-}
+} */

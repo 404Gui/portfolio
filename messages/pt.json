@@ -30,7 +30,7 @@
     "p3": "Uma aplicação full stack desenvolvida para ajudar usuários a organizarem suas tarefas de forma intuitiva, eficiente e moderna. O sistema conta com autenticação segura, gerenciamento completo de tarefas e uma interface fluida com suporte a drag and drop."
   },
   "main": {
-    "info1": "Olá,",
+    "info1": "Hey,",
     "info2": "Sou <span>Guilherme</span>,",
     "info3": "Desenvolvedor Full-stack",
     "info4": "Gosto de programar, resolver problemas e transformar ideias em código. Com uma boa xícara de café e uma boa documentação, transformo seu problema em solução.",
@@ -38,8 +38,17 @@
     "talk": "Vamos conversar"
   },
   "projects": {
-    "title": "Seção dedicada aos meus projetos (concluídos e futuros)",
-    "description": "Conheça alguns dos projetos desenvolvidos por mim, que abordam soluções simples e práticas para o dia a dia. Em alguns deles, utilizei API Routes do Next.js. É só clicar e testar o projeto para ver como funciona na prática ou, se preferir, conferir o código no GitHub!"
+    "title": "Projetos",
+    "taskoomDescription": "Taskoom é um sistema moderno de gerenciamento de tarefas que oferece autenticação segura via JWT, organização eficiente por listas e tarefas, além de integração com IA da Hugging Face para sugerir e otimizar a criação de listas.",
+    "weatherDescription": "App que exibe a previsão do tempo com base em localização e API de clima, com animações e dados atualizados.",
+    "todolistDescription": "Uma to-do list leve e intuitiva para gerenciamento rápido de tarefas com persistência local.",
+    "taskoomRole": "Sistema de produtividade",
+    "weatherRole": "App de previsão do tempo",
+    "todolistRole": "Gerenciador de tarefas simples",
+    "verProjeto": "Abrir projeto",
+    "verDescricao": "Descrição",
+    "verCodigo": "Código"
+
   },
   "footer": {
     "aboutTitle": "Sobre",
@@ -47,5 +56,8 @@
     "connectTitle": "Conecte-se",
     "copyright": "© 2025 Guilherme Pappi. Todos os direitos reservados.",
     "toTop": "Voltar ao topo"
+  },
+  "works": {
+    "title": "Projetos"
   }
 }

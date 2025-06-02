@@ -1,22 +1,9 @@
-"use client";
-import React from "react";
 import Link from "next/link";
 import styles from "./Footer.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { useTranslations } from "next-intl";
+import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 
 
-const Footer = () => {
-  const t = useTranslations("footer");
-  
-  const scrollToTop = () => {
-    const homeElement = document.getElementById("home");
-    if (homeElement) {
-      homeElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
+export function Footer({ t }) {
   return (
     <footer className={styles.footer}>
       <div className={styles.content}>
@@ -34,20 +21,15 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon
-                  className={styles.socialIcons}
-                  icon={faGithub}
-                />
+                <IconBrandGithub size={24} /> 
+                
               </Link>
               <Link
                 href="https://www.linkedin.com/in/guilherme-pappi/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon
-                  className={styles.socialIcons}
-                  icon={faLinkedin}
-                />
+                <IconBrandLinkedin size={24} />
               </Link>
             </div>
           </section>
@@ -57,13 +39,8 @@ const Footer = () => {
 
         <div className={styles.bottomRow}>
           <p className={styles.copy}>{t("copyright")}</p>
-          <button onClick={scrollToTop} className={styles.toTopButton}>
-            {t("toTop")}
-          </button>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

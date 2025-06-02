@@ -1,47 +1,21 @@
-"use client";
-import React from "react";
-import MyCarousel from "../Carro/Carro";
-import { motion } from "framer-motion";
 import styles from "./styles.module.css";
-import { useTranslations } from "next-intl";
+import { ProjectsShowcase } from "../ProjectsShowcase/ProjectsShowcase";
 
-const fadeInUp = {
-  hidden: { opacity: 0, y: 80 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: "easeOut" } },
-};
-
-const SectionCarousel = () => {
-  const t = useTranslations("projects");
-
+export function SectionCarousel({ t }) {
   return (
-    <motion.section
-      className={styles.sectionContainer}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.3 }}
-    >
-      <motion.div className={styles.sectionWrapper} variants={fadeInUp}>
-        <motion.div
-          className={styles.textSection}
-          variants={fadeInUp}
-          transition={{ delay: 0.1 }}
-        >
-          <motion.h1 whileHover={{ scale: 1.05 }}>
-            {t("title")}
-          </motion.h1>
-          <motion.p transition={{ delay: 0.2 }}>{t("description")}</motion.p>
-        </motion.div>
+    <section className={styles.sectionContainer}>
+      <div className={styles.sectionWrapper}>
+        <div className={styles.quoteContainer}>
+          <span className={styles.subline}>
+            “A lot of times, people don’t know what they want until you show it to them”
+          </span>
+          <span className={styles.quoteAuthor}>— Steve Jobs</span>
+        </div>
 
-        <motion.div
-          className={styles.carouselSection}
-          variants={fadeInUp}
-          transition={{ delay: 0.3 }}
-        >
-          <MyCarousel />
-        </motion.div>
-      </motion.div>
-    </motion.section>
+        <div className={styles.carouselSection}>
+          <ProjectsShowcase />
+        </div>
+      </div>
+    </section>
   );
-};
-
-export default SectionCarousel;
+}
