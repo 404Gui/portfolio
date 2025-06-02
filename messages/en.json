@@ -38,8 +38,16 @@
     "talk": "Let's talk"
   },
   "projects": {
-    "title": "Section dedicated to my projects (completed and upcoming)",
-    "description": "Check out some of the projects I've developed, featuring simple and practical solutions for everyday needs. In some of them, I used Next.js API Routes. Just click to try out the project and see how it works in practice — or, if you prefer, take a look at the code on GitHub!"
+    "title": "A section dedicated to my projects (completed and upcoming)",
+    "taskoomDescription": "Taskoom is a modern task management system that provides secure authentication via JWT, efficient organization through lists and tasks, and integration with Hugging Face AI to suggest and optimize list creation.",
+    "weatherDescription": "A weather app that shows forecasts based on your location and weather API, featuring smooth animations and up-to-date data.",
+    "todolistDescription": "A lightweight and intuitive to-do list for quick task management with local persistence.",
+    "taskoomRole": "Productivity system",
+    "weatherRole": "Weather forecast app",
+    "todolistRole": "Simple task manager",
+    "verProjeto": "Open project",
+    "verDescricao": "Description",
+    "verCodigo": "Source code"
   },
   "footer": {
     "aboutTitle": "About",
