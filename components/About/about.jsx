@@ -11,13 +11,13 @@ export function About({ t }) {
 
   return (
     <div className={styles.about} id="about">
-      <div className={styles.logos}>
+      {/* <div className={styles.logos}>
         {icons.map((icon, idx) => (
           <div key={idx} className={styles.iconWrapper}>
             <FontAwesomeIcon icon={icon} className={styles.icon} />
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className={styles.content}>
         <h1 className={styles.title}>{t("title")}</h1>

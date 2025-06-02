@@ -38,8 +38,18 @@
     "talk": "Vamos conversar"
   },
   "projects": {
-    "title": "Projetos em destaque",
-    "description": "Uma seleção dos projetos mais recentes que desenvolvi com carinho e dedicação. Teste ou acesse o código no GitHub!"
+    "title": "Seção dedicada aos meus projetos (concluídos e futuros)",
+    "description": "Conheça alguns dos projetos desenvolvidos por mim, que abordam soluções simples e práticas para o dia a dia. Em alguns deles, utilizei API Routes do Next.js. É só clicar e testar o projeto para ver como funciona na prática ou, se preferir, conferir o código no GitHub!",
+    "taskoomDescription": "Taskoom é um sistema moderno de gerenciamento de tarefas que oferece autenticação segura via JWT, organização eficiente por listas e tarefas, além de integração com IA da Hugging Face para sugerir e otimizar a criação de listas.",
+    "weatherDescription": "App que exibe a previsão do tempo com base em localização e API de clima, com animações e dados atualizados.",
+    "todolistDescription": "Uma to-do list leve e intuitiva para gerenciamento rápido de tarefas com persistência local.",
+    "taskoomRole": "Sistema de produtividade",
+    "weatherRole": "App de previsão do tempo",
+    "todolistRole": "Gerenciador de tarefas simples",
+    "verProjeto": "Abrir projeto",
+    "verDescricao": "Descrição",
+    "verCodigo": "Código"
+
   },
   "footer": {
     "aboutTitle": "Sobre",

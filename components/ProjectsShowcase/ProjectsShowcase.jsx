@@ -7,6 +7,7 @@ import {
   Info,
   ChevronLeft,
   ChevronRight,
+  Undo2,
 } from "lucide-react";
 import {
   SiPython,
@@ -29,9 +30,8 @@ export function ProjectsShowcase() {
     {
       id: 1,
       name: "Taskoom",
-      role: "Sistema de produtividade",
-      description:
-        "Taskoom é um sistema moderno de gerenciamento de tarefas que oferece autenticação segura via JWT, organização eficiente por listas e tarefas, além de integração com IA da Hugging Face para sugerir e otimizar a criação de listas.",
+      role: t("taskoomRole"),
+      description: t("taskoomDescription"),
       image: "/taskoom-background.png",
       url: "https://taskoom.com/",
       github: "",
@@ -48,9 +48,8 @@ export function ProjectsShowcase() {
     {
       id: 2,
       name: "Weather Forecast",
-      role: "App de previsão do tempo",
-      description:
-        "App que exibe a previsão do tempo com base em localização e API de clima, com animações e dados atualizados.",
+      role: t("weatherRole"),
+      description: t("weatherDescription"),
       image: "/weather-background.png",
       url: "https://weatherforecast-project-nine.vercel.app",
       github: "https://github.com/404Gui/weather-app",
@@ -67,9 +66,8 @@ export function ProjectsShowcase() {
     {
       id: 3,
       name: "To-do List",
-      role: "Gerenciador de tarefas simples",
-      description:
-        "Uma to-do list leve e intuitiva para gerenciamento rápido de tarefas com persistência local.",
+      role: t("todolistRole"),
+      description: t("todolistDescription"),
       image: "/todolist-background.png",
       url: "/todolist",
       github: "https://github.com/404Gui/todolist",
@@ -119,6 +117,7 @@ export function ProjectsShowcase() {
               alt={getProjectAt(-1).name}
               fill
               className={styles.sideImage}
+              onClick={prevProject}
             />
           </div>
         </div>
@@ -139,8 +138,8 @@ export function ProjectsShowcase() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <ExternalLink size={16} style={{ marginRight: 4 }} /> Ver
-                projeto
+                <ExternalLink size={16} style={{ marginRight: 4 }} />
+                {t("verProjeto")}
               </a>
               {currentProject.github && (
                 <a
@@ -152,22 +151,28 @@ export function ProjectsShowcase() {
                 </a>
               )}
               <a onClick={toggleDescription} className={styles.descButton}>
-                <Info size={16} style={{ marginRight: 4 }} /> Ver descrição
+                <Info size={16} style={{ marginRight: 4 }} />{" "}
+                {t("verDescricao")}
               </a>
             </div>
           </div>
           {showDescription && (
-            <div
-              className={styles.descriptionOverlay}
-              onClick={toggleDescription}
-            >
-              <p>{currentProject.description}</p>
-              <div className={styles.techIcons}>
-                {currentProject.techs?.map((Icon, index) => (
-                  <Icon key={index} size={20} style={{ marginRight: 8 }} />
-                ))}
+            <>
+              <div className={styles.backButton} onClick={toggleDescription}>
+                <Undo2 />
               </div>
-            </div>
+              <div
+                className={styles.descriptionOverlay}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <p>{currentProject.description}</p>
+                <div className={styles.techIcons}>
+                  {currentProject.techs?.map((Icon, index) => (
+                    <Icon key={index} size={20} style={{ marginRight: 8 }} />
+                  ))}
+                </div>
+              </div>
+            </>
           )}
         </div>
 
@@ -178,6 +183,7 @@ export function ProjectsShowcase() {
               alt={getProjectAt(1).name}
               fill
               className={styles.sideImage}
+              onClick={nextProject}
             />
           </div>
           <button
