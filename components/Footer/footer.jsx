@@ -4,8 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export function Footer({ t }) {
-  
-
   return (
     <footer className={styles.footer}>
       <div className={styles.content}>
@@ -46,9 +44,6 @@ export function Footer({ t }) {
 
         <div className={styles.bottomRow}>
           <p className={styles.copy}>{t("copyright")}</p>
-          <button className={styles.toTopButton}>
-            {t("toTop")}
-          </button>
         </div>
       </div>
     </footer>

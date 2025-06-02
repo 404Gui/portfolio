@@ -6,12 +6,13 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Flag from "react-world-flags";
 import { Link } from "../../src/i18n/navigation";
+import { Terminal } from "lucide-react";
 
 export function Header({ t }) {
   return (
     <header className={styles.header}>
       <div className={styles.logoWrapper}>
-        <span className={styles.techs}>&lt;TS/&gt;</span>
+        <Terminal className={styles.techs} />
         <span className={styles.name}>Guilherme Pappi</span>
       </div>
 
