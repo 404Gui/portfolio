@@ -27,11 +27,11 @@
 
 .mainCard {
   position: relative;
-  width: 600px;
-  aspect-ratio: 16/9;
+  width: 45vw;
+  aspect-ratio: 16 / 9;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -149,7 +149,6 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-
 .techIcons {
   align-items: center;
 }
@@ -233,4 +232,58 @@
 
 .nextButton {
   order: 1;
+}
+
+
+@media (max-width: 768px) {
+   .sideWrapper {
+    display: none;
+  }
+  .mainCard {
+    width: 80vw;
+  }  
+
+  .overlay h3 {
+    font-size: 1.5rem;
+  }
+
+  .overlay p {
+    font-size: 0.95rem;
+  }
+
+  .descriptionOverlay {
+    font-size: 0.95rem;
+    padding: 1.5rem;
+  }
+
+  .projectStack {
+    margin-top: 1.5rem;
+  }
+
+  .stackIcons {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {  
+
+  .overlay h3 {
+    font-size: 1.25rem;
+  }
+
+  .overlay p {
+    font-size: 0.85rem;
+  }
+
+  .overlayLinks a {
+    font-size: 0.6rem;
+  }
+
+  .descriptionOverlay {
+    padding: 1rem;
+  }
+
+  .stackIcon {
+    padding: 0.5rem;
+  }
 }
