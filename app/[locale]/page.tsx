@@ -13,7 +13,7 @@ export default async function Home() {
   const tHeader = await getTranslations('header');
   const tMain = await getTranslations('main');
   const tAbout = await getTranslations('about');
-  const tWorks = await getTranslations('works');
+  const tWorks = await getTranslations('projects');
   const tCarousel = await getTranslations('projects');
   const tFooter = await getTranslations('footer');
 
