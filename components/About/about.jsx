@@ -4,21 +4,12 @@ import {
   faLaptopCode,
   faProjectDiagram,
 } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export function About({ t }) {
   const icons = [faCode, faLaptopCode, faProjectDiagram];
 
   return (
     <div className={styles.about} id="about">
-      {/* <div className={styles.logos}>
-        {icons.map((icon, idx) => (
-          <div key={idx} className={styles.iconWrapper}>
-            <FontAwesomeIcon icon={icon} className={styles.icon} />
-          </div>
-        ))}
-      </div> */}
-
       <div className={styles.content}>
         <h1 className={styles.title}>{t("title")}</h1>
         <p className={styles.texto}>
