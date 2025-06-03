@@ -49,8 +49,8 @@
 
 @media (max-width: 435px) {
     .codeTwo {
-        width: 50% !important;
-        text-align: center !important;
+        width: 65% !important;
+        text-align: end !important;
     }
 
 }

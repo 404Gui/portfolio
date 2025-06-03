@@ -108,7 +108,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.922);
   color: white;
   padding: 2rem;
   display: flex;
@@ -128,15 +128,12 @@
 
 
 .descriptionOverlay p {
-  margin-bottom: 1rem;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 .backButton {
   align-self: flex-start;
-  background-color: rgb(255 255 255 / 4%);
-  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
   margin: 1rem;
@@ -282,6 +279,10 @@
   .descriptionOverlay {
     padding: 1rem;
   }
+    .descriptionOverlay p {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+    }
 
   .stackIcon {
     padding: 0.5rem;
