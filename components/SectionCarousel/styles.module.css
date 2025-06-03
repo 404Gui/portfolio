@@ -1,70 +1,73 @@
 .sectionContainer {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 2rem 1rem;
-  margin-bottom: 2.5rem;
+  padding: 3rem 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .sectionWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.5rem;
-  background: linear-gradient(145deg, #0a1f1c 0%, #00090e 100%);
+  gap: 3rem;
   border: 1px solid rgba(165, 108, 255, 0.2);
   box-shadow: 0 0 20px rgba(18, 247, 214, 0.1);
-  border-radius: 18px;
-  padding: 2.5rem;
+  border-radius: 24px;
+  padding: 3rem 2rem;
   backdrop-filter: blur(8px);
   transition: all 0.4s ease-in-out;
+  overflow: hidden;
+
 }
 
 .sectionWrapper:hover {
   box-shadow: 0 0 30px rgba(165, 108, 255, 0.4);
 }
 
-@media (min-width: 868px) {
-  .sectionWrapper {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.quoteContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quoteAuthor {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #555;
+  text-align: end;
+}
+
+.subline {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #aaa;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+  max-width: 600px;
+  text-align: center;
 }
 
 .textSection {
   width: 100%;
   flex: 1;
+  text-align: center;
   color: var(--verde-escuro);
   font-family: 'Ubuntu', sans-serif;
-  text-align: center;
-}
-
-@media (min-width: 868px) {
-  .textSection {
-    text-align: left;
-  }
+  padding: 0 1rem;
 }
 
 .textSection h1 {
-  font-size: 2.4rem;
-  margin-bottom: 1rem;
+  font-size: 2.6rem;
+  margin-bottom: 1.25rem;
   color: #a56cff;
   transition: transform 0.3s ease;
 }
 
 .textSection p {
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: 1.15rem;
+  line-height: 1.8;
   color: #98FAEC;
 }
 
-.carouselSection {
-  width: 100%;
-  flex: 1.5;
-  max-width: 100%;
-}
 
-@media (min-width: 860px) {
-  .carouselSection {
-    max-width: 60%;
-  }
-}
+
