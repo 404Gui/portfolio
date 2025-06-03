@@ -1,6 +1,6 @@
 import styles from "./styles.module.css"
 
-import Vazio from "../../Empty/empty";
+import { Vazio } from "../Empty/empty";
 import TaskItem from "../TaskItem/TaskItem";
 
 export default function TaskList({ filteredItems, dark, handleChangeChbk, handleEditItem, handleDeleteItem }) {
