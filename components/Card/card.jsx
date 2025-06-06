@@ -1,4 +1,4 @@
-import styles from "./styles.module.css";
+import styles from "./Card.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faGraduationCap, faEnvelope, faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { useTranslations } from "next-intl";

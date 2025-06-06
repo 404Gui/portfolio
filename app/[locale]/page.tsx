@@ -1,12 +1,12 @@
 // app/page.tsx (Server Component)
 import styles from "../page.module.css";
-import { Header } from "../../components/Header/header";
+import { Header } from "../../components/Header/Header";
 import { Main } from "../../components/Main/page";
 import { About } from "../../components/About/about";
-import { Works } from "../../components/Works/works";
+import { Works } from "../../components/Works/Works";
 import { SectionCarousel } from "../../components/SectionCarousel/SectionCarousel";
 import { ToastContainer } from "react-toastify";
-import { Footer } from "../../components/Footer/footer";
+import { Footer } from "../../components/Footer/Footer";
 import { getTranslations } from 'next-intl/server';
 
 export default async function Home() {
