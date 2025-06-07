@@ -1,290 +1,71 @@
-.projectsSection {
- 
-  text-align: center;
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
 }
 
-.sectionTitle {
-  font-size: 2.5rem;
-  color: #a56cff;
-  margin-bottom: 0.5rem;
-}
-
-.sectionSubtitle {
-  font-size: 1.2rem;
-  color: #98FAEC;
-  margin-bottom: 3rem;
-  max-width: 700px;
-  margin-inline: auto;
-}
-
-.carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  position: relative;
-}
-
-.mainCard {
-  position: relative;
-  width: 45vw;
-  aspect-ratio: 16 / 9;
+.projectCard {
+  background: #1c1c1c;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
 }
 
-.mainCard:hover {
-  transform: scale(1.02);
+.projectCard:hover {
+  transform: translateY(-5px);
 }
 
-.mainImage {
+.imageWrapper {
+  position: relative;
+  height: 180px;
+}
+
+.image {
   object-fit: cover;
+  border-bottom: 1px solid #333;
 }
 
 .overlay {
   position: absolute;
   bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
   width: 100%;
-  padding: 1.5rem;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), #000000de);
-  color: white;
-  text-align: left;
+  padding: 1rem;
 }
 
-.overlay h3 {
-  font-size: 1.75rem;
-  margin-bottom: 0.5rem;
-}
-
-.overlay p {
-  font-size: 1rem;
+.description {
+  padding: 1rem;
   color: #ccc;
+  font-size: 0.95rem;
+  flex-grow: 1;
 }
 
-.overlayLinks {
-  margin-top: 1rem;
+.links {
   display: flex;
-  gap: 1.25rem;
-  align-items: center;;
+  gap: 1rem;
+  padding: 0 1rem 1rem;
 }
 
-.overlayLinks a {
+.links a {
+  font-weight: bold;
   display: flex;
   align-items: center;
-  text-decoration: none;
-  font-weight: bold;
+  gap: 0.4rem;
+  transition: color 0.2s ease;
 }
 
-.overlayLinks a:hover {
-  text-decoration: underline;
+.links a:hover {
+  color: #82e9de;
 }
 
-.sideCard {
-  position: relative;
-  width: 180px;
-  aspect-ratio: 16/9;
-  border-radius: 1rem;
-  overflow: hidden;
-  opacity: 0.5;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  cursor: pointer;
-}
-
-.sideCard:hover {
-  opacity: 0.8;
-  transform: scale(1.05);
-}
-
-.sideImage {
-  object-fit: cover;
-}
-
-.descriptionOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.922);
-  color: white;
-  padding: 2rem;
+.stack {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow-y: auto;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  z-index: 10;
-  border-radius: 1rem;
-  scrollbar-width: none;
-}
-
-.descriptionOverlay::-webkit-scrollbar {
-  display: none;
-}
-
-
-.descriptionOverlay p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.backButton {
-  align-self: flex-start;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  margin: 1rem;
-  transition: background-color 0.2s ease;
-  position: absolute;
-  z-index: 11;
-}
-
-.backButton:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.techIcons {
-  align-items: center;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.descButton {
-  background: none;
-  border: none;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: underline;
-  transition: opacity 0.2s;
-}
-
-.descButton:hover {
-  opacity: 0.8;
-}
-
-
-.projectStack {
-  margin-top: 2rem;
-  text-align: center;
-  color: #fff;
-}
-
-.stackIcons {
-  display: flex;
-  justify-content: center;
+  gap: 0.5rem;
+  padding: 0 1rem 1rem;
   flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.stackIcon {
-  background-color: #0a1f1c;
-  padding: 0.6rem;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s ease;
-}
-
-.stackIcon:hover {
-  transform: scale(1.1);
-  cursor: default;
-}
-
-.sideWrapper {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.navButton {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-  border-radius: 50%;
-  transition: background 0.2s ease;
-}
-
-.navButton:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.prevButton {
-  order: -1;
-}
-
-.nextButton {
-  order: 1;
-}
-
-
-@media (max-width: 768px) {
-   .sideWrapper {
-    display: none;
-  }
-  .mainCard {
-    width: 80vw;
-  }  
-
-  .overlay h3 {
-    font-size: 1.5rem;
-  }
-
-  .overlay p {
-    font-size: 0.95rem;
-  }
-
-  .descriptionOverlay {
-    font-size: 0.95rem;
-    padding: 1.5rem;
-  }
-
-  .projectStack {
-    margin-top: 1.5rem;
-  }
-
-  .stackIcons {
-    gap: 0.5rem;
-  }
-}
-
-@media (max-width: 480px) {  
-
-  .overlay h3 {
-    font-size: 1.25rem;
-  }
-
-  .overlay p {
-    font-size: 0.85rem;
-  }
-
-  .overlayLinks a {
-    font-size: 0.6rem;
-  }
-
-  .descriptionOverlay {
-    padding: 1rem;
-  }
-    .descriptionOverlay p {
-      font-size: 0.8rem;
-      margin-top: 1rem;
-    }
-
-  .stackIcon {
-    padding: 0.5rem;
-  }
 }
