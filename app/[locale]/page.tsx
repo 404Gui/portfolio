@@ -1,6 +1,6 @@
 // app/page.tsx (Server Component)
 import styles from "../page.module.css";
-import { Header } from "../../components/Header/Header";
+import { Header } from "../../components/Header/header";
 import { Main } from "../../components/Main/page";
 import { About } from "../../components/About/about";
 import { Works } from "../../components/Works/Works";
