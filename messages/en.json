@@ -1,11 +1,12 @@
 {
   "about": {
-    "title": "About Me",
-    "p1": "👋 <strong>My name is Guilherme Pappi</strong>, and I'm a systems developer passionate about technology, innovation, and building applications.",
-    "p2": "I'm a strong supporter of open source culture and am always learning and evolving, staying up to date with new trends to deliver better and better results. I believe in the power of knowledge as a driver of both social and personal change.",
-    "p3": "I bring 2 years of hands-on experience with some of the best technologies on the market, always focused on <span>turning ideas and problems into great, modern solutions</span>.",
-    "p4": "This portfolio showcases some of my projects, ideas, and what I’ve been building. If you'd like to chat about projects, ideas, or need a hand with something, count on me!",
-    "p5": "<strong>By the way, take a look at my projects just below!</strong>"
+    "title": "About me",
+    "p1": "👋 <strong>Hey, dev! I'm Guilherme</strong>, a systems developer driven by curiosity, innovation, and the desire to build meaningful solutions.",
+    "p2": "With over 2 years of experience in the field, I combine hands-on skills with the best technologies available to <span>turn ideas into modern, efficient, and user-centered products</span>.",
+    "p3": "I'm an open source enthusiast and firmly believe that sharing knowledge is one of the most powerful ways to grow — both individually and as a society.",
+    "p4": "I'm always evolving, keeping up with trends, exploring new tools, and aiming to deliver not just code, but thoughtful and intelligent solutions.",
+    "p5": "This portfolio showcases some of my projects, ideas, and experiences. If you'd like to chat about technology, share ideas, or need help with a project, <strong>I'm here for it!</strong>",
+    "p6": "👉 <strong>Take a look at the projects below and feel free to get in touch.</strong>"
   },
   "header": {
     "home": "Home",

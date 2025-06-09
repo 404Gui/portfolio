@@ -1,4 +1,4 @@
-import styles from "./styles.module.css";
+import styles from "./Works.module.css";
 import { FiChevronDown } from "react-icons/fi";
 
 export function Works({ t }) {
