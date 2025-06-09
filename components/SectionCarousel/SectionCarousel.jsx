@@ -1,4 +1,4 @@
-import styles from "./styles.module.css";
+import styles from "./SectionCarousel.module.css";
 import { ProjectsShowcase } from "../ProjectsShowcase/ProjectsShowcase";
 
 export function SectionCarousel({ t }) {

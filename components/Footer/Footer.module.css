@@ -1,5 +1,6 @@
 .footer {
-  background: linear-gradient(180deg, #0a1f1c 0%, #00090e 100%);
+  /* background: linear-gradient(180deg, #0a1f1c 0%, #00090e 100%); */
+  background: llinear-gradient(180deg, #0a1f1c4a 0%, #00090e 100%);
   color: #94a3b8;
   padding: 4rem 2rem;
   font-family: "Inter", sans-serif;

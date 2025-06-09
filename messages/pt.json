@@ -1,11 +1,12 @@
 {
   "about": {
     "title": "Sobre mim",
-    "p1": "👋 <strong>Me chamo Guilherme Pappi</strong>, sou desenvolvedor de sistemas, amante de tecnologia, inovação e criação de aplicações.",
-    "p2": "Sou um grande apoiador da cultura do open source e estou sempre aprendendo e evoluindo, de olho nas novas tendências para entregar resultados cada vez melhores. Acredito no potencial do conhecimento como agente de mudança social e pessoal.",
-    "p3": "Sou desenvolvedor há 2 anos e trago experiência prática com as melhores tecnologias do mercado, sempre focado em <span>transformar ideias e problemas em ótimas e modernas soluções</span>.",
-    "p4": "Neste portfólio mostro um pouco dos meus projetos, minhas ideias e do que desenvolvo. Se quiser conversar sobre projetos, ideias ou precisar de alguma ajuda, pode contar comigo!",
-    "p5": "<strong>Aproveite e dê uma olhada nos meus projetos logo abaixo!</strong>"
+    "p1": "👋 <strong>Me chamo Guilherme</strong>, desenvolvedor de sistemas movido por curiosidade, inovação e a vontade de criar soluções que realmente fazem a diferença.",
+    "p2": "Atuo há mais de 2 anos na área, combinando prática com as melhores tecnologias do mercado para <span>transformar ideias em produtos modernos, eficientes e centrados no usuário</span>.",
+    "p3": "Sou entusiasta do open source e acredito que compartilhar conhecimento é uma das formas mais poderosas de evoluir — pessoalmente e como sociedade.",
+    "p4": "Estou sempre em movimento, estudando tendências, explorando novas ferramentas e buscando entregar não só código, mas soluções inteligentes e bem pensadas.",
+    "p5": "Este portfólio reúne alguns dos meus projetos, conceitos e experiências. Se quiser trocar ideias, falar sobre tecnologia ou precisar de ajuda em algum projeto, <strong>estou à disposição!</strong>",
+    "p6": "<strong>Explore os projetos abaixo e fique à vontade para entrar em contato.</strong>"
   },
   "header": {
     "home": "Home",
@@ -48,7 +49,6 @@
     "verProjeto": "Abrir projeto",
     "verDescricao": "Descrição",
     "verCodigo": "Código"
-
   },
   "footer": {
     "aboutTitle": "Sobre",

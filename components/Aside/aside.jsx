@@ -1,4 +1,4 @@
-import styles from "./styles.module.css"
+import styles from "./Aside.module.css"
 
 export function CardTwo() {
 
