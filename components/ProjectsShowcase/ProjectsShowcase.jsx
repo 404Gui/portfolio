@@ -3,7 +3,7 @@ import Image from "next/image";
 import { ExternalLink, Github } from "lucide-react";
 import {
   SiPython, SiFastapi, SiNextdotjs, SiTypescript, SiReact,
-  SiNodedotjs, SiExpress
+  SiNodedotjs, SiExpress, SiAngular, SiIonic
 } from "react-icons/si";
 import styles from "./ProjectsShowcase.module.css";
 import { useTranslations } from "next-intl";
@@ -64,6 +64,22 @@ export function ProjectsShowcase() {
         },
       ],
     },
+    {
+      id: 4,
+      name: "Pokédex",
+      role: t("pokedexRole"),
+      description: t("pokedexDescription"),
+      image: "/PokeDex.png",
+      url: "https://poke-app-green.vercel.app/home",
+      github: "https://github.com/404Gui/PokeAPP",
+      stack: [
+        { name: "React", icon: <SiAngular size={24} color="#DD0031" /> },
+        {
+          name: "TypeScript",
+          icon: <SiIonic size={24} color="#3178C6" />,
+        },
+      ],
+    }
   ];
 
   return (
