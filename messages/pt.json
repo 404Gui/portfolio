@@ -40,7 +40,7 @@
   },
   "projects": {
     "title": "Projetos",
-    "taskoomDescription": "Taskoom é um sistema moderno de gerenciamento de tarefas que oferece autenticação segura via JWT, organização eficiente por listas e tarefas, além de integração com IA da Hugging Face para sugerir e otimizar a criação de listas.",
+    "taskoomDescription": "Plataforma para gerenciamento de tarefas com autenticação JWT/OAuth, organização por listas e tarefas, além de integração com IA da Hugging Face para sugerir e otimizar a criação de listas.",
     "weatherDescription": "App que exibe a previsão do tempo com base em localização e API de clima, com animações e dados atualizados.",
     "todolistDescription": "Uma to-do list leve e intuitiva para gerenciamento rápido de tarefas com persistência local.",
     "pokedexDescription": "Pokédex interativa com busca por Pokémon, exibição de habilidades, tipos, evolução e opção de favoritos. Inspirada no estilo dos jogos de Game Boy, com interface responsiva. Desenvolvida com Ionic e Angular para um desafio técnico.",
