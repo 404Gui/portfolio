@@ -13,7 +13,9 @@ export function Header({ t }) {
       <Container>
         <div className={styles.logoWrapper}>
           <Terminal className={styles.techs} />
-          <span className={styles.name}>Guilherme Pappi</span>
+          <Link href="#home">
+            <span className={styles.name}>Guilherme Pappi</span>
+          </Link>
         </div>
 
         <nav className={styles.navbar}>

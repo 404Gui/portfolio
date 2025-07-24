@@ -14,9 +14,11 @@
 }
 
 .title h1 {
-  /* color: var(--verde-claro); */
-  color: #a56cff;
   font-family: 'Ubuntu', sans-serif;
+  color: var(--verde-escuro);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .iconLine {
@@ -56,7 +58,7 @@
 
 .arrow {
   font-size: 24px;
-  color: #a56cff;
+  color: var(--verde-escuro);
   animation: bounce 2.5s ease-in-out infinite;
 }
 

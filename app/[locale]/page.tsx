@@ -8,6 +8,7 @@ import { SectionCarousel } from "../../components/SectionCarousel/SectionCarouse
 import { ToastContainer } from "react-toastify";
 import { Footer } from "../../components/Footer/footer";
 import { getTranslations } from "next-intl/server";
+// import CertificatesSection from "components/CertificatesSection/CertificatesSection"
 
 export default async function Home() {
   const tHeader = await getTranslations("header");
@@ -22,6 +23,7 @@ export default async function Home() {
       <Header t={tHeader} />
       <Main t={tMain} />
       <About t={tAbout} />
+      {/* <CertificatesSection /> */}
       <Works t={tWorks} />
       <SectionCarousel t={tCarousel} />
       <Footer t={tFooter} />
