@@ -19,7 +19,6 @@
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 40px
 }
 
 .iconLine {
@@ -59,7 +58,7 @@
 
 .arrow {
   font-size: 24px;
-  color: #a56cff;
+  color: var(--verde-escuro);
   animation: bounce 2.5s ease-in-out infinite;
 }
 
