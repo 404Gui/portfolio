@@ -17,7 +17,7 @@
   },
   "card": {
     "carrerInfo": "Full-stack | Pleno",
-    "info1": "2024 - Atual (Dev. Front-end na 2Clix)",
+    "info1": "2025 - Atual (Tech Designer - Front-end na Wefit)",
     "info2": "Gestão da Tecnologia da Informação",
     "info3": "guilhermepappi@gmail.com",
     "info4": "São Paulo"
@@ -44,10 +44,14 @@
     "weatherDescription": "App que exibe a previsão do tempo com base em localização e API de clima, com animações e dados atualizados.",
     "todolistDescription": "Uma to-do list leve e intuitiva para gerenciamento rápido de tarefas com persistência local.",
     "pokedexDescription": "Pokédex interativa com busca por Pokémon, exibição de habilidades, tipos, evolução e opção de favoritos. Inspirada no estilo dos jogos de Game Boy, com interface responsiva. Desenvolvida com Ionic e Angular para um desafio técnico.",
+    "deliciaDescription": "Site institucional da Delicia, com informações sobre a empresa, produtos, serviços e contato.",
     "taskoomRole": "Sistema de produtividade",
     "weatherRole": "App de previsão do tempo",
     "todolistRole": "Gerenciador de tarefas simples",
     "pokedexRole": "Catálogo interativo de Pokémon",
+    "deliciaRole": "Site institucional da Delicia",
+    "siteInstitucionalRole": "Site institucional da Delicia",
+    "siteInstitucionalDescription": "Site institucional e promocional desenvolvido para a Delícia Seara, apresentando a marca, seus produtos, campanhas promocionais, informações institucionais e canais de contato, com foco em comunicação clara e fortalecimento da presença digital.",
     "verProjeto": "Abrir projeto",
     "verDescricao": "Descrição",
     "verCodigo": "Código"

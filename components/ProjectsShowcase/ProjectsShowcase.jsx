@@ -3,10 +3,11 @@ import Image from "next/image";
 import { ExternalLink, Github } from "lucide-react";
 import {
   SiPython, SiFastapi, SiNextdotjs, SiTypescript, SiReact,
-  SiNodedotjs, SiExpress, SiAngular, SiIonic
+  SiNodedotjs, SiExpress, SiAngular, SiIonic, SiWordpress
 } from "react-icons/si";
 import styles from "./ProjectsShowcase.module.css";
 import { useTranslations } from "next-intl";
+import React from "react";
 
 export function ProjectsShowcase() {
   const t = useTranslations("projects");
@@ -78,6 +79,22 @@ export function ProjectsShowcase() {
           name: "TypeScript",
           icon: <SiIonic size={24} color="#3178C6" />,
         },
+      ],
+    },
+    {
+      id: 5,
+      name: "Site Institucional da Delicia",
+      role: t("siteInstitucionalRole"),
+      description: t("siteInstitucionalDescription"),
+      image: "/delicia-background.png",
+      url: "https://new.delicia.com.br/",
+      stack: [
+        { name: "React", icon: <SiReact size={24} color="#61DAFB" /> },
+        {
+          name: "Next",
+          icon: <SiNextdotjs size={24} color="#ffffff" />,
+        },
+        { name: "Wordpress", icon: <SiWordpress size={24} color="#21759b" /> },
       ],
     }
   ];
