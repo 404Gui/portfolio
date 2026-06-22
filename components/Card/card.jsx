@@ -37,7 +37,18 @@ export function Card() {
         <ul className={styles.infoList}>
           <li>
             <FontAwesomeIcon icon={faBriefcase} />
-            {t("info1")}
+            {t.rich("info1", {
+              company: (chunks) => (
+                <a
+                  href="https://wefit.com.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.empresa}
+                >
+                  {chunks}
+                </a>
+              ),
+            })}
           </li>
           <li>
             <FontAwesomeIcon icon={faGraduationCap} /> {t("info2")}

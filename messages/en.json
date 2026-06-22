@@ -17,8 +17,8 @@
   },
   "card": {
     "carrerInfo": "Full-stack | Mid-level",
-    "info1": "2024 - Present (Front-end developer at 2Clix)",
-    "info2": "IT Management",
+    "info1": "Front-end Engineer at <company>WeFit</company>",
+    "info2": "A.I Engineering",
     "info3": "guilhermepappi@gmail.com",
     "info4": "São Paulo"
   },
@@ -48,6 +48,8 @@
     "weatherRole": "Weather forecast app",
     "todolistRole": "Simple task manager",
     "pokedexRole": "Interactive Pokémon catalog",
+    "siteInstitucionalRole": "Institutional website for Delicia",
+    "siteInstitucionalDescription": "Institutional and promotional website developed for Delicia Seara, showcasing the brand, its products, promotional campaigns, institutional information, and contact channels, focusing on clear communication and strengthening digital presence.",
     "verProjeto": "Open project",
     "verDescricao": "Description",
     "verCodigo": "Source code"

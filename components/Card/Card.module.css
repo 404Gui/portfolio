@@ -143,11 +143,12 @@
 }
 
 ul .empresa {
-  margin-left: 7px;
+  --tw-text-opacity: 1;
+  color: rgb(245 196 0 / var(--tw-text-opacity, 1));
+  text-decoration: underline;
 }
 
 ul .empresa:hover {
-  color: orange;
   transition: 0.5s;
   cursor: pointer;
 }
